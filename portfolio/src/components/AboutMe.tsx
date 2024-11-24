@@ -45,7 +45,7 @@ const AboutMe: React.FC = () => {
                 </div>
 
                 {/* Skills & Expertise */}
-                <div className="mb-12">
+                {/* <div className="mb-12">
                     <h2 className="text-2xl font-semibold text-indigo-400 mb-4">Skills & Expertise</h2>
                     <ul className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
 
@@ -56,7 +56,7 @@ const AboutMe: React.FC = () => {
                             viewport={{ once: true }}>
                             <li className="flex items-center">
                                 <span className="mr-3 text-lg">React</span>
-                                <span className="inline-block w-8 h-8 bg-blue-500 rounded-full"></span> {/* Icon goes here */}
+                                <span className="inline-block w-8 h-8 bg-blue-500 rounded-full"></span> 
                             </li>
                         </motion.div>
                         <motion.div
@@ -66,7 +66,7 @@ const AboutMe: React.FC = () => {
                             viewport={{ once: true }}>
                             <li className="flex items-center">
                                 <span className="mr-3 text-lg">Django</span>
-                                <span className="inline-block w-8 h-8 bg-green-600 rounded-full"></span> {/* Icon goes here */}
+                                <span className="inline-block w-8 h-8 bg-green-600 rounded-full"></span> 
                             </li>
                         </motion.div>
                         <motion.div
@@ -76,12 +76,12 @@ const AboutMe: React.FC = () => {
                             viewport={{ once: true }}>
                             <li className="flex items-center">
                                 <span className="mr-3 text-lg">Python</span>
-                                <span className="inline-block w-8 h-8 bg-yellow-500 rounded-full"></span> {/* Icon goes here */}
+                                <span className="inline-block w-8 h-8 bg-yellow-500 rounded-full"></span>
                             </li>
                         </motion.div>
-                        {/* Add other skills */}
+                        
                     </ul>
-                </div>
+                </div> */}
 
                 {/* Career Goals & Aspirations */}
                 <motion.div
@@ -131,7 +131,7 @@ const AboutMe: React.FC = () => {
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}>
                     <div className="text-center">
-                        <a href="/resume" className="inline-block bg-indigo-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-indigo-600 transition duration-300">
+                        <a href="#contact" className="inline-block bg-indigo-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-indigo-600 transition duration-300">
                             Let’s work together!
                         </a>
                     </div>

@@ -68,18 +68,20 @@ const Footer = () => {
                     </h3>
                     <div className="flex justify-center space-x-6">
                         <a
-                            href="https://github.com"
+                            href="https://github.com/JeanEudes-dev/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-300 hover:text-indigo-400 transition duration-300"
+                            title="github"
                         >
                             <FaGithub size={24} />
                         </a>
                         <a
-                            href="https://linkedin.com"
+                            href="https://linkedin.com/in/jean-eudes-dev"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-300 hover:text-indigo-400 transition duration-300"
+                            title="Linkedin"
                         >
                             <FaLinkedin size={24} />
                         </a>
@@ -87,6 +89,7 @@ const Footer = () => {
                             href="https://twitter.com"
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="Twitter"
                             className="text-gray-300 hover:text-indigo-400 transition duration-300"
                         >
                             <FaTwitter size={24} />

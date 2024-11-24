@@ -22,6 +22,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
+            className="sticky"
         >
             <nav className="bg-white-900 bg-opacity-60 backdrop-blur-lg text-white sticky top-0 z-50 shadow-lg">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

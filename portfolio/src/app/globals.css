@@ -9,9 +9,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #002d56;
+    --background: #001529;
     --foreground: #ededed;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,4 +44,8 @@ body {
   background-position: inherit;
   filter: blur(10px); /* Adjust the blur level here */
   z-index: -9;
+}
+
+.rot {
+  rotate: -25;
 }

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
     return (
-        <section className="relative w-full h-screen bg-gradient-to-b from-[#002d56] to-[#001833] items-center justify-center px-6 sm:px-12">
+        <section className="relative w-full h-screen bg-gray-100 dark:bg-gray-900 items-center justify-center px-6 sm:px-12">
             <div className="flex flex-col lg:flex-row items-center lg:justify-between w-full space-y-8 lg:space-y-0">
                 {/* Left Side (Text) */}
                 <div className="text-white space-y-6 max-w-lg lg:text-left text-center">
@@ -112,7 +112,7 @@ export default function HeroSection() {
                         alt="Jean-Eudes Assogba - Full Stack Developer"
                         width={300}
                         height={400}
-                        className="w-full max-w-xs sm:max-w-sm lg:max-w-md rounded-xl border-4 border-white shadow-lg hover:shadow-2xl transition duration-300"
+                        className="w-full max-w-xs rot sm:max-w-sm lg:max-w-md rounded-xl border-4 border-white shadow-lg hover:shadow-2xl transition duration-300"
                     />
                 </motion.div>
             </div>

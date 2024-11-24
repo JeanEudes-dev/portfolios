@@ -1,42 +1,87 @@
-import Projects from '@/components/Projects/projects';
-import HeroSection from '../components/HeroSection'; // Import HeroSection
-import SkillsSection from '@/components/SkillsSection';
-import ContactForm from '../components/ContactForm';
-import AboutMe from '@/components/AboutMe';
-import Achievements from '@/components/Achievements';
-import Footer from '@/components/Footer';
+"use client";
+
+import { motion } from "framer-motion";
+import HeroSection from "../components/HeroSection";
+import SkillsSection from "@/components/SkillsSection";
+import ContactForm from "../components/ContactForm";
+import AboutMe from "@/components/AboutMe";
+import Achievements from "@/components/Achievements";
+import Footer from "@/components/Footer";
+import Projects from "@/components/Projects/Projects";
 
 export default function Home() {
+  // Animation Variants
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <main>
+      {/* Hero Section */}
       <HeroSection />
 
-      {/* <section id="resume">
-        <h2>My Resume</h2>
-      </section> */}
-
-      <section id="about">
+      {/* About Me Section */}
+      <motion.section
+        id="about"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+        transition={{ duration: 0.8 }}
+      >
         <AboutMe />
-      </section>
+      </motion.section>
 
-      <section id="skills">
+      {/* Skills Section */}
+      <motion.section
+        id="skills"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
         <SkillsSection />
-      </section>
+      </motion.section>
 
-      <section id="projects">
+      {/* Projects Section */}
+      <motion.section
+        id="projects"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
         <Projects />
-        {/* Projects content here */}
-      </section>
+      </motion.section>
 
-      <section id="achievements">
+      {/* Achievements Section */}
+      <motion.section
+        id="achievements"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+        transition={{ duration: 0.8, delay: 0.6 }}
+      >
         <Achievements />
-        {/* Projects content here */}
-      </section>
+      </motion.section>
 
-      <section id="contact">
+      {/* Contact Section */}
+      <motion.section
+        id="contact"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={sectionVariants}
+        transition={{ duration: 0.8, delay: 0.8 }}
+      >
         <ContactForm />
-      </section>
-      
+      </motion.section>
+
+      {/* Footer */}
       <Footer />
     </main>
   );

@@ -1,41 +1,67 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const achievementsData = [
     {
         title: "IBM Full Stack Software Developer",
-        organization: "Coursera",
+        organization: "IBM on Coursera",
         date: "2024",
-        badge: "/path-to-badge-image.jpg", // Replace with your badge image
-        link: "https://www.coursera.org", // Replace with your certificate URL
+        badge: "/certificate.png", // Replace with the actual badge image path
+        link: "https://coursera.org/share/b58ccbf7f245c970b31b5168ab2f2866", // Replace with your certificate URL
         type: "certification",
     },
     {
         title: "Python for Data Science",
-        organization: "Coursera",
+        organization: "Simplilearn",
         date: "2023",
-        badge: "/path-to-badge-image.jpg",
-        link: "https://www.coursera.org",
+        badge: "/python-badge.png", // Replace with the actual badge image path
+        link: "https://www.coursera.org", // Replace with your certificate URL
+        type: "certification",
+    },
+    {
+        title: "Responsive Web Design",
+        organization: "freeCodeCamp",
+        date: "2023",
+        badge: "/web-design-badge.png", // Replace with the actual badge image path
+        link: "https://www.freecodecamp.org", // Replace with your certificate URL
         type: "certification",
     },
     {
         title: "Academic Excellence Award",
-        description:
-            "Recognized for outstanding performance in software engineering studies.",
+        description: "Recognized for outstanding performance in software engineering studies.",
         date: "2022",
         icon: "🎓",
         type: "achievement",
     },
+    {
+        title: "Scholarship for Academic Excellence",
+        description: "Awarded a financial scholarship for exceptional academic performance.",
+        date: "2020",
+        icon: "🏆",
+        type: "achievement",
+    },
 ];
 
+
 const Achievements = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState("");
+
+    const openModal = (imageSrc: string) => {
+        setSelectedImage(imageSrc);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setSelectedImage("");
+    };
+
     return (
-        <section
-            id="achievements"
-            className="py-16 px-4 bg-gray-100 dark:bg-gray-900"
-        >
+        <section id="achievements" className="py-16 px-4 bg-gray-100 dark:bg-gray-900">
             {/* Header */}
             <div className="text-center mb-12">
                 <motion.h2
@@ -52,8 +78,7 @@ const Achievements = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                    Highlights of my certifications and achievements throughout my
-                    journey.
+                    Highlights of my certifications and achievements throughout my journey.
                 </motion.p>
             </div>
 
@@ -75,16 +100,16 @@ const Achievements = () => {
                         <div className="flex flex-col items-center text-center">
                             {/* Icon or Badge */}
                             {item.type === "certification" ? (
-                                <img
+                                <Image
                                     src={item.badge || "/default-badge.jpg"}
                                     alt={`${item.title} Badge`}
-                                    className="w-16 h-16 mb-4 rounded-full shadow-lg hover:rotate-3 transition-transform"
+                                    className="w-24 h-24 mb-4 shadow-lg hover:scale-110 cursor-pointer"
+                                    onClick={() => openModal(item.badge || "/default-badge.jpg")}
+                                    width={100}
+                                    height={100}
                                 />
                             ) : (
-                                <span
-                                    className="text-4xl mb-4"
-                                    aria-label={item.title}
-                                >
+                                <span className="text-4xl mb-4" aria-label={item.title}>
                                     {item.icon}
                                 </span>
                             )}
@@ -126,6 +151,27 @@ const Achievements = () => {
                     </motion.div>
                 ))}
             </div>
+
+            {/* Modal for Image */}
+            {isModalOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="relative bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
+                        <button
+                            onClick={closeModal}
+                            className="absolute top-2 right-2 text-gray-700 dark:text-gray-300 hover:text-red-500"
+                        >
+                            ✖
+                        </button>
+                        <Image
+                            src={selectedImage}
+                            alt="Enlarged Achievement"
+                            className="w-full max-w-md h-auto rounded-lg"
+                            width={800}
+                            height={800}
+                        />
+                    </div>
+                </div>
+            )}
 
             {/* Call to Action */}
             <div className="text-center mt-12">

@@ -2,72 +2,71 @@
 
 import React from "react";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaNodeJs } from "react-icons/fa";
-import { PiFileSqlDuotone } from "react-icons/pi";
-import { SiDjango } from "react-icons/si";
 
-export const techIcons: Record<string, JSX.Element> = {
-    HTML: <FaHtml5 className="text-orange-500" />,
-    CSS: <FaCss3Alt className="text-blue-500" />,
-    JavaScript: <FaJs className="text-yellow-500" />,
-    React: <FaReact className="text-cyan-400" />,
-    Python: <FaPython className="text-blue-300" />,
-    Node: <FaNodeJs className="text-green-400" />,
-    Django: <SiDjango className="text-blue-500" />,
-    MySQL: <PiFileSqlDuotone className="text-blue-500" />,
-};
-
-
-interface ProjectCardProps {
+interface Project {
     title: string;
     description: string;
     techStack: string[];
-    links: { live?: string; github: string };
+    links: {
+        live?: string;
+        github: string;
+    };
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, techStack, links }) => {
-    return (
-        <div className="z-9999 relative bg-gradient-to-br from-gray-800 to-gray-700 shadow-lg rounded-xl p-6 hover:shadow-2xl transition-transform transform hover:-translate-y-2">
-            {/* Gradient Border */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl blur-md opacity-20"></div>
+interface ProjectCardProps {
+    project: Project;
+}
 
-            <div className="relative">
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+    return (
+        <div
+            className="relative bg-gradient-to-br from-gray-800 to-gray-700 shadow-lg rounded-xl overflow-hidden hover:scale-105 transition-transform transform hover:-translate-y-2"
+        >
+            {/* Animated Gradient Border */}
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 blur-lg opacity-30 hover:opacity-50 transition-opacity duration-500"></div>
+
+            {/* Content */}
+            <div className="relative p-6">
                 {/* Project Title */}
-                <h3 className="text-2xl font-bold mb-3 text-blue-300">{title}</h3>
+                <h3 className="text-xl font-bold text-White-400 mb-3">
+                    {project.title}
+                </h3>
 
                 {/* Description */}
-                <p className="text-gray-300 mb-4">{description}</p>
+                <p className="text-gray-300 mb-4">
+                    {project.description}
+                </p>
 
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-4">
-                    {techStack.map((tech, index) => (
+                    {project.techStack.map((tech, index) => (
                         <span
                             key={index}
-                            className="bg-gray-600 text-xs text-gray-200 px-2 py-1 rounded-full flex items-center gap-1"
-                        >{techIcons[tech] || null}
-                            <span>{tech}</span>
+                            className="bg-gray-600 text-xs text-gray-200 px-2 py-1 rounded-full"
+                        >
+                            {tech}
                         </span>
                     ))}
                 </div>
 
                 {/* Buttons */}
-                <div className="flex space-x-4 z-9999">
-                    {links.live && (
+                <div className="flex space-x-4">
+                    {project.links.live && (
                         <a
-                            href={links.live}
+                            href={project.links.live}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="z-9999 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg flex items-center gap-2 transition"
+                            className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg flex items-center gap-2 transition"
                         >
                             <FaExternalLinkAlt />
                             Live Demo
                         </a>
                     )}
                     <a
-                        href={links.github}
+                        href={project.links.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-gray-800 z-9999 hover:bg-gray-900 text-white py-2 px-4 rounded-lg flex items-center gap-2 transition"
+                        className="bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 rounded-lg flex items-center gap-2 transition"
                     >
                         <FaGithub />
                         GitHub
