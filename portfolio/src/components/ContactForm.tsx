@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -6,9 +6,14 @@ import { FaSpinner } from "react-icons/fa";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
 
-// Form validation rules
+type FormData = {
+    from_name: string;
+    email: string;
+    message: string;
+};
+
 const validationRules = {
-    name: {
+    from_name: {
         required: "Name is required",
     },
     email: {
@@ -28,11 +33,11 @@ const validationRules = {
 };
 
 const ContactForm: React.FC = () => {
-    const { register, handleSubmit, formState: { errors }, reset } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm<FormData>();
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [formStatus, setFormStatus] = useState<string | null>(null);
 
-    const onSubmit = async (data: any) => {
+    const onSubmit = async (data: FormData) => {
         setIsSubmitting(true);
         setFormStatus(null); // Reset status on new submission
 
@@ -48,7 +53,7 @@ const ContactForm: React.FC = () => {
             reset(); // Reset form on success
         } catch (error) {
             setFormStatus("Something went wrong. Please try again later.");
-            console.log(error)
+            console.error(error);
         } finally {
             setIsSubmitting(false);
         }
@@ -65,17 +70,16 @@ const ContactForm: React.FC = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5 }}
-                        viewport={{ once: true }}
                     >
                         <label htmlFor="name" className="block text-lg font-semibold mb-2">Name</label>
                         <input
                             type="text"
                             id="name"
-                            className={`w-full p-3 rounded-lg  text-black ${errors.name ? 'border-red-500' : 'border-gray-300'}`}
-                            {...register("from_name", validationRules.name)}
+                            className={`w-full p-3 rounded-lg text-black ${errors.from_name ? "border-red-500" : "border-gray-300"}`}
+                            {...register("from_name", validationRules.from_name)}
                             placeholder="Your Name"
                         />
-                        {errors.name && <p className="text-red-500 text-sm">{errors.name.message}</p>}
+                        {errors.from_name && <p className="text-red-500 text-sm">{errors.from_name.message}</p>}
                     </motion.div>
 
                     {/* Email Field */}
@@ -84,13 +88,12 @@ const ContactForm: React.FC = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
-                        viewport={{ once: true }}
                     >
                         <label htmlFor="email" className="block text-lg font-semibold mb-2">Email</label>
                         <input
                             type="email"
                             id="email"
-                            className={`w-full p-3 rounded-lg text-black ${errors.email ? 'border-red-500' : 'border-gray-300'}`}
+                            className={`w-full p-3 rounded-lg text-black ${errors.email ? "border-red-500" : "border-gray-300"}`}
                             {...register("email", validationRules.email)}
                             placeholder="Your Email"
                         />
@@ -103,13 +106,12 @@ const ContactForm: React.FC = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.4 }}
-                        viewport={{ once: true }}
                     >
                         <label htmlFor="message" className="block text-lg font-semibold mb-2">Message</label>
                         <textarea
                             id="message"
                             rows={4}
-                            className={`w-full p-3 rounded-lg text-black ${errors.message ? 'border-red-500' : 'border-gray-300'}`}
+                            className={`w-full p-3 rounded-lg text-black ${errors.message ? "border-red-500" : "border-gray-300"}`}
                             {...register("message", validationRules.message)}
                             placeholder="Your Message"
                         />
@@ -119,13 +121,12 @@ const ContactForm: React.FC = () => {
                     {/* Submit Button */}
                     <motion.button
                         type="submit"
-                        className={`w-full py-3 rounded-lg bg-blue-600 text-white font-semibold mt-4 transition-transform hover:scale-105 ${isSubmitting ? 'cursor-not-allowed opacity-50' : ''}`}
+                        className={`w-full py-3 rounded-lg bg-blue-600 text-white font-semibold mt-4 transition-transform hover:scale-105 ${isSubmitting ? "cursor-not-allowed opacity-50" : ""}`}
                         disabled={isSubmitting}
                         whileHover={{ scale: 1.05 }}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.6 }}
-                        viewport={{ once: true }}
                     >
                         {isSubmitting ? <FaSpinner className="animate-spin mr-2" /> : "Send Message"}
                     </motion.button>
@@ -133,7 +134,7 @@ const ContactForm: React.FC = () => {
 
                 {/* Form Submission Feedback */}
                 {formStatus && (
-                    <div className={`mt-4 text-center text-lg ${formStatus.includes('error') ? 'text-red-500' : 'text-green-500'}`}>
+                    <div className={`mt-4 text-center text-lg ${formStatus.includes("error") ? "text-red-500" : "text-green-500"}`}>
                         {formStatus}
                     </div>
                 )}
