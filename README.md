@@ -15,7 +15,7 @@ This repository contains the source code for my personal portfolio website, buil
 
 ## Demo
 
-**Live URL**: [https://username.github.io/portfolio](https://username.github.io/portfolio)
+**Live URL**: [https://JeanEudes-dev.github.io/portfolios](https://JeanEudes-dev.github.io/portfolios)
 
 ---
 
@@ -42,7 +42,7 @@ Before running or building the project, ensure you have the following installed:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/username/portfolio.git
+git clone https://github.com/JeanEudes-dev/portfolio.git
 cd portfolio
 ```
 
