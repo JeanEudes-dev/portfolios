@@ -9,7 +9,7 @@ const achievementsData = [
         title: "IBM Full Stack Software Developer",
         organization: "IBM on Coursera",
         date: "2024",
-        badge: "/certificate.png", // Replace with the actual badge image path
+        badge: "/portfolios/Certificate.png", // Replace with the actual badge image path
         link: "https://coursera.org/share/b58ccbf7f245c970b31b5168ab2f2866", // Replace with your certificate URL
         type: "certification",
     },

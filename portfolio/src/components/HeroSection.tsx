@@ -54,7 +54,7 @@ export default function HeroSection() {
                             viewport={{ once: true }}
                         >
                             <a
-                                href="/Jean-eudes-ASSOGBA-resume.pdf"
+                                href="/portfolios/Jean-eudes-ASSOGBA-resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -108,7 +108,7 @@ export default function HeroSection() {
                     viewport={{ once: true }}
                 >
                     <Image
-                        src="/me.jpg"
+                        src="/portfolios/me.jpg"
                         alt="Jean-Eudes Assogba - Full Stack Developer"
                         width={300}
                         height={400}
