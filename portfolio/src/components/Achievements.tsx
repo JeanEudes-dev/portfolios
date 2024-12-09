@@ -6,40 +6,24 @@ import Image from "next/image";
 
 const achievementsData = [
     {
-        title: "IBM Full Stack Software Developer",
+        title: "IBM Full Stack Software Developer Professional Certificate",
         organization: "IBM on Coursera",
-        date: "2024",
-        badge: "/portfolios/Certificate.png", // Replace with the actual badge image path
-        link: "https://coursera.org/share/b58ccbf7f245c970b31b5168ab2f2866", // Replace with your certificate URL
-        type: "certification",
-    },
-    {
-        title: "Python for Data Science",
-        organization: "Simplilearn",
-        date: "2023",
-        badge: "/python-badge.png", // Replace with the actual badge image path
-        link: "https://www.coursera.org", // Replace with your certificate URL
-        type: "certification",
-    },
-    {
-        title: "Responsive Web Design",
-        organization: "freeCodeCamp",
-        date: "2023",
-        badge: "/web-design-badge.png", // Replace with the actual badge image path
-        link: "https://www.freecodecamp.org", // Replace with your certificate URL
+        date: "Nov/2024",
+        badge: "/portfolios/Certificate.png",
+        link: "https://coursera.org/share/b58ccbf7f245c970b31b5168ab2f2866",
         type: "certification",
     },
     {
         title: "Academic Excellence Award",
         description: "Recognized for outstanding performance in software engineering studies.",
-        date: "2022",
+        date: "2023",
         icon: "🎓",
         type: "achievement",
     },
     {
         title: "Scholarship for Academic Excellence",
         description: "Awarded a financial scholarship for exceptional academic performance.",
-        date: "2020",
+        date: "2022",
         icon: "🏆",
         type: "achievement",
     },

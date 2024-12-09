@@ -118,7 +118,7 @@ const Footer = () => {
                     </p>
                     <p>
                         <a
-                            href="tel:+1234567890"
+                            href="tel:+22940284032"
                             className="hover:text-indigo-400 transition duration-300"
                         >
                             +229 402 84 032
@@ -137,7 +137,7 @@ const Footer = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.6 }}
                 >
-                    © 2024 Jean-Eudes Assogba. All Rights Reserved.
+                    © 2024 Jean-Eudes Assogba <i>JeanEudes-dev</i>. All Rights Reserved.
                 </motion.p>
             </div>
 

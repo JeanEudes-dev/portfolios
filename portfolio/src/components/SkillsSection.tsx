@@ -1,27 +1,33 @@
 "use client";
 
 import React from "react";
-import { FaPython, FaJs, FaCogs, FaReact, FaGitAlt, FaDocker, FaHtml5, FaPhp, FaLeaf, FaFlask, FaProjectDiagram, FaBrain, FaDatabase } from "react-icons/fa";
+import { FaPython, FaReact, FaGitAlt, FaDocker, FaHtml5, FaPhp, FaProjectDiagram, FaBrain, FaDatabase, FaJs } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiDjango, SiFlask, SiMysql, SiPostgresql, SiTypescript } from "react-icons/si";
+import { TbBrandCpp, TbBrandCSharp } from "react-icons/tb";
+import { RiNextjsLine } from "react-icons/ri";
 
 // Icons for skills
 const skillIcons: Record<string, JSX.Element> = {
     Python: <FaPython className="text-blue-500" aria-label="Python Icon" />,
-    JavaScript: <FaJs className="text-yellow-500" aria-label="JavaScript Icon" />,
-    Cpp: <FaCogs className="text-gray-500" aria-label="C++ Icon" />,
-    CSharp: <FaCogs className="text-green-500" aria-label="C# Icon" />, // Adjust with specific icon if available
+    JavaScript: <IoLogoJavascript className="text-yellow-500" aria-label="JavaScript Icon" />,
+    TypeScript: <SiTypescript className="text-yellow-500" aria-label="TypeScript Icon" />,
+    Expressjs: <FaJs className="text-yellow-500" aria-label="Express Icon" />,
+    Cpp: <TbBrandCpp className="text-gray-500" aria-label="C++ Icon" />,
+    CSharp: <TbBrandCSharp className="text-green-500" aria-label="C# Icon" />, // Adjust with specific icon if available
     HTMLCSS: <FaHtml5 className="text-orange-600" aria-label="HTML/CSS Icon" />,
     PHP: <FaPhp className="text-purple-500" aria-label="PHP Icon" />,
     React: <FaReact className="text-cyan-400" aria-label="React Icon" />,
-    Django: <FaLeaf className="text-green-500" aria-label="Django Icon" />, // Replace with specific Django icon
-    Flask: <FaFlask className="text-gray-400" aria-label="Flask Icon" />,
-    NextJs: <FaJs className="text-black" aria-label="Next.js Icon" />, // Replace with a specific Next.js icon
+    Django: <SiDjango className="text-green-500" aria-label="Django Icon" />, // Replace with specific Django icon
+    Flask: <SiFlask className="text-gray-400" aria-label="Flask Icon" />,
+    NextJs: <RiNextjsLine className="text-black" aria-label="Next.js Icon" />, // Replace with a specific Next.js icon
     TensorFlow: <FaProjectDiagram className="text-orange-500" aria-label="TensorFlow Icon" />,
-    ScikitLearn: <FaBrain className="text-blue-400" aria-label="Scikit-learn Icon" />, // Adjust with specific icon if available
+    ScikitLearn: <FaBrain className="text-blue-400" aria-label="Scikit-learn Icon" />, 
     Git: <FaGitAlt className="text-orange-500" aria-label="Git Icon" />,
     Docker: <FaDocker className="text-blue-600" aria-label="Docker Icon" />,
-    MySQL: <FaDatabase className="text-blue-500" aria-label="MySQL Icon" />,
-    PostgreSQL: <FaDatabase className="text-green-500" aria-label="PostgreSQL Icon" />,
+    MySQL: <SiMysql className="text-blue-500" aria-label="MySQL Icon" />,
+    PostgreSQL: <SiPostgresql className="text-green-500" aria-label="PostgreSQL Icon" />,
     SQLite: <FaDatabase className="text-gray-500" aria-label="SQLite Icon" />,
 };
 
@@ -33,27 +39,29 @@ interface Skill {
 
 const skills: Record<string, Skill[]> = {
     "Programming Languages": [
+        { name: "HTML/CSS", level: 97, icon: skillIcons.HTMLCSS },
         { name: "Python", level: 85, icon: skillIcons.Python },
-        { name: "JavaScript", level: 80, icon: skillIcons.JavaScript },
-        { name: "C++", level: 70, icon: skillIcons.Cpp },
-        { name: "C#", level: 70, icon: skillIcons.CSharp },
-        { name: "PHP", level: 65, icon: skillIcons.PHP },
-        { name: "HTML/CSS", level: 85, icon: skillIcons.HTMLCSS },
+        { name: "JavaScript", level: 90, icon: skillIcons.JavaScript },
+        { name: "TypeScript", level: 95, icon: skillIcons.TypeScript },
+        { name: "C++", level: 80, icon: skillIcons.Cpp },
+        { name: "C#", level: 50, icon: skillIcons.CSharp },
+        { name: "PHP", level: 50, icon: skillIcons.PHP },
     ],
     "Frameworks & Libraries": [
         { name: "React", level: 90, icon: skillIcons.React },
         { name: "Django", level: 85, icon: skillIcons.Django },
         { name: "Flask", level: 75, icon: skillIcons.Flask },
         { name: "Next.js", level: 80, icon: skillIcons.NextJs },
-        { name: "TensorFlow", level: 70, icon: skillIcons.TensorFlow },
-        { name: "Scikit-learn", level: 65, icon: skillIcons.ScikitLearn },
+        { name: "Express.js", level: 80, icon: skillIcons.ExpressJs },
+        // { name: "TensorFlow", level: 70, icon: skillIcons.TensorFlow },
+        // { name: "Scikit-learn", level: 65, icon: skillIcons.ScikitLearn },
     ],
     "Tools & Technologies": [
-        { name: "Git", level: 80, icon: skillIcons.Git },
-        { name: "Docker", level: 75, icon: skillIcons.Docker },
+        { name: "Git/Github", level: 95, icon: skillIcons.Git },
+        { name: "Docker", level: 50, icon: skillIcons.Docker },
         { name: "MySQL", level: 85, icon: skillIcons.MySQL },
         { name: "PostgreSQL", level: 80, icon: skillIcons.PostgreSQL },
-        { name: "SQLite", level: 70, icon: skillIcons.SQLite },
+        { name: "SQLite", level: 95, icon: skillIcons.SQLite },
     ],
 };
 
