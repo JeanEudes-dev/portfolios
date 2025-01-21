@@ -54,7 +54,7 @@ export default function HeroSection() {
                             viewport={{ once: true }}
                         >
                             <a
-                                href="/portfolios/Jean-eudes-ASSOGBA-resume.pdf"
+                                href="/portfolios/Jean-Eudes_ASSOGBA_resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

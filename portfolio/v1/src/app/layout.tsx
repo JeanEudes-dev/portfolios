@@ -1,5 +1,5 @@
-import "./globals.css"; // Ensure Tailwind is applied
-import Navbar from "../components/Navbar";
+import Navbar from "@/components/Navbar";
+import "./globals.css";
 
 export const metadata = {
   title: "My Portfolio",

@@ -1,13 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
-import HeroSection from "../components/HeroSection";
-import SkillsSection from "@/components/SkillsSection";
-import ContactForm from "../components/ContactForm";
 import AboutMe from "@/components/AboutMe";
 import Achievements from "@/components/Achievements";
+import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects/Projects";
+import SkillsSection from "@/components/SkillsSection";
+import { motion } from "framer-motion";
 
 export default function Home() {
   // Animation Variants
