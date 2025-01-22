@@ -1,7 +1,6 @@
 'use client'
 import Sidebar from "./components/Sidebar";
 import "./globals.css";
-import Head from "next/head";
 import { useRef, useEffect } from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -30,7 +29,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Jean-Eudes Assogba - Full-Stack Software Engineer portfolio website showcasing skills, experiences, and projects." />
@@ -38,7 +37,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta name="keywords" content="Full-Stack Developer, Software Engineer, Jean-Eudes Assogba, React, Python, Portfolio, Web Development" />
         <meta name="robots" content="index, follow" />
         <title>Jean-Eudes Assogba | Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/portfolios/favicon.ico" />
         <meta property="og:title" content="Jean-Eudes Assogba | Portfolio" />
         <meta property="og:description" content="Explore the portfolio of Jean-Eudes Assogba, a passionate Full-Stack Software Engineer." />
         <meta property="og:image" content="/me.jpg" />
@@ -48,13 +47,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta name="twitter:title" content="Jean-Eudes Assogba | Portfolio" />
         <meta name="twitter:description" content="Explore the portfolio of Jean-Eudes Assogba, a passionate Full-Stack Software Engineer." />
         <meta name="twitter:image" content="/me.jpg" />
-      </Head>
+      </head>
       <body>
         <div className="lg:flex">
           <Sidebar />
           <main className="lg:ml-auto w-full lg:w-[52%] lg:p-8 flex flex-col h-screen">{children}</main>
         </div>
-        <div ref={lightEffectRef} className="light-effect"></div>
+        <div ref={lightEffectRef} className="light-effect hidden lg:block"></div>
       </body>
     </html>
   );

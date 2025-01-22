@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
@@ -8,26 +7,26 @@ import { motion } from "framer-motion";
 import Me from "./components/me";
 
 const Main = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = ["about", "experience", "projects", "me"];
-      const scrollPos = window.scrollY + window.innerHeight / 2;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const sections = ["about", "experience", "projects", "me"];
+  //     const scrollPos = window.scrollY + window.innerHeight / 2;
 
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (scrollPos >= offsetTop && scrollPos < offsetTop + offsetHeight) {
-            window.history.replaceState(null, "", `#${section}`);
-            break;
-          }
-        }
-      }
-    };
+  //     for (const section of sections) {
+  //       const element = document.getElementById(section);
+  //       if (element) {
+  //         const { offsetTop, offsetHeight } = element;
+  //         if (scrollPos >= offsetTop && scrollPos < offsetTop + offsetHeight) {
+  //           window.history.replaceState(null, "", `#${section}`);
+  //           break;
+  //         }
+  //       }
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   const sections = [
     { id: "about", Component: About, title: "About" },
