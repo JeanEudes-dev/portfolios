@@ -1,8 +1,33 @@
+'use client'
 import Sidebar from "./components/Sidebar";
 import "./globals.css";
 import Head from "next/head";
+import { useRef, useEffect } from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
+  const lightEffectRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e: { clientX: number; clientY: number; }) => {
+      const lightEffect = lightEffectRef.current;
+      if (lightEffect) {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+        const lightSize = 400;
+
+        lightEffect.style.left = `${mouseX - lightSize / 2}px`;
+        lightEffect.style.top = `${mouseY - lightSize / 2}px`;
+      }
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    // Cleanup event listener on unmount
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+
   return (
     <html lang="en">
       <Head>
@@ -24,11 +49,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta name="twitter:description" content="Explore the portfolio of Jean-Eudes Assogba, a passionate Full-Stack Software Engineer." />
         <meta name="twitter:image" content="/me.jpg" />
       </Head>
-      <body className="bg-[#0a192f] text-[#ccd6f6]">
+      <body>
         <div className="lg:flex">
           <Sidebar />
           <main className="lg:ml-auto w-full lg:w-[52%] lg:p-8 flex flex-col h-screen">{children}</main>
         </div>
+        <div ref={lightEffectRef} className="light-effect"></div>
       </body>
     </html>
   );

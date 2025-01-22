@@ -36,7 +36,7 @@ const Sidebar = () => {
     };
 
     return (
-        <aside className="lg:fixed lg:top-0 bg-[#0a192f] p-6 lg:flex lg:flex-col justify-between lg:left-0 lg:top-0 lg:h-full lg:w-[48%] lg:p-20">
+        <aside className="lg:fixed lg:top-0 p-6 lg:flex lg:flex-col justify-between lg:left-0 lg:top-0 lg:h-full lg:w-[48%] lg:p-20">
             {/* Header Section */}
             <motion.div
                 className="flex flex-col items-center lg:items-start"
@@ -44,13 +44,13 @@ const Sidebar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <h1 className="text-3xl lg:text-5xl font-bold text-white">
+                <h1 className="text-3xl lg:text-5xl font-bold ">
                     Jean-Eudes Assogba
                 </h1>
-                <h2 className="text-md lg:text-xl text-white mt-2">
+                <h2 className="text-md lg:text-xl  mt-2">
                     Full-Stack Software Engineer
                 </h2>
-                <p className="hidden lg:block text-sm lg:text-md text-white mt-4 leading-relaxed">
+                <p className="hidden lg:block text-sm lg:text-md  mt-4 leading-relaxed">
                     I design and develop high-quality, modern, and scalable web
                     applications.
                 </p>
