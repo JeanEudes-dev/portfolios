@@ -7,7 +7,7 @@ const Projects = () => {
       description:
         "Developed a professional and user-friendly AI-powered chat assistant using modern technologies and best practices, enabling seamless interactions and intelligent responses.",
       link: "https://github.com/JeanEudes-dev/Personalised-chat-assistant",
-      imageUrl: "/chat.png",
+      imageUrl: "/portfolios/chat.png",
       alt: "Personalized AI Chat Assistant project card",
     },
     {
@@ -15,7 +15,7 @@ const Projects = () => {
       description:
         "Crafted an interactive music web application that leveraged the Spotify API, achieving over 500 song searches per day on average.",
       link: "https://github.com/JeanEudes-dev/Music_web",
-      imageUrl: "/music-web.png",
+      imageUrl: "/portfolios/music-web.png",
       alt: "Music Web project card",
     },
     {
@@ -23,7 +23,7 @@ const Projects = () => {
       description:
         "An online platform providing users access to a vast library of books and personalized recommendations, with seamless reading and searching among 10,000+ books.",
       link: "https://jeaneudes-dev.github.io/Bookify/",
-      imageUrl: "/bookify.png",
+      imageUrl: "/portfolios/bookify.png",
       alt: "Bookify project card",
     },
     {

@@ -109,7 +109,8 @@ const Sidebar = () => {
             </motion.nav>
 
             <div className="mt-6">
-                <Link className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base" href="/Jean-Eudes_ASSOGBA_resume.pdf" target="_blank" rel="noreferrer noopener" aria-label="View Full Résumé (opens in a new tab)">
+                <a className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base" 
+                href="/portfolios/Jean-Eudes_ASSOGBA_resume.pdf" target="_blank" rel="noreferrer noopener" aria-label="View Full Résumé (opens in a new tab)">
                     <span>
                         View&nbsp;
                         <span className="inline-block">
@@ -119,7 +120,7 @@ const Sidebar = () => {
                             </svg>
                         </span>
                     </span>
-                </Link>
+                </a>
             </div>
 
             {/* Social Media Icons */}

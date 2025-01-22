@@ -1,12 +1,11 @@
-import Image from "next/image";
 import React from "react";
 
 const Me = () => {
     return (
         <div className="flex flex-col items-center justify-center h-screen">
             <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-teal-400 shadow-lg">
-                <Image
-                    src="/me.jpg"
+                <img
+                    src="/portfolios/me.jpg"
                     alt="Jean-Eudes Assogba"
                     className="object-cover w-full h-full"
                     width={256}
