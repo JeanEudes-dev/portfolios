@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 
 const Projects = () => {
@@ -77,7 +76,7 @@ const Projects = () => {
               <p className="mt-2 text-sm leading-normal">{project.description}</p>
             </div>
 
-            <Image
+            <img
               alt={project.alt}
               loading="lazy"
               width="200"
