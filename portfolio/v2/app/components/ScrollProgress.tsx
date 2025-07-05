@@ -8,7 +8,8 @@ const ScrollProgress = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const totalHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
       const progress = (window.scrollY / totalHeight) * 100;
       setScrollProgress(Math.min(100, Math.max(0, progress)));
     };
@@ -35,12 +36,12 @@ const ScrollProgress = () => {
         >
           {/* Glow effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 blur-sm opacity-50"></div>
-          
+
           {/* Shimmer effect */}
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer transform -translate-x-full"></div>
         </motion.div>
       </div>
-      
+
       {/* Optional: Subtle indicator dot at the end */}
       {scrollProgress > 0 && (
         <motion.div
