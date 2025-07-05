@@ -13,7 +13,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "experience", "projects"];
+      const sections = ["about", "experience", "skills", "projects"];
       const scrollPos = window.scrollY + window.innerHeight / 2;
 
       for (const section of sections) {
@@ -66,7 +66,7 @@ const Sidebar = () => {
         }}
       >
         <motion.ul className="space-y-8">
-          {["About", "Experience", "Projects"].map((item, index) => {
+          {["About", "Experience", "Skills", "Projects"].map((item, index) => {
             const sectionId = item.toLowerCase();
             const isActive = activeSection === sectionId;
 

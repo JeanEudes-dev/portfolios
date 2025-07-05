@@ -2,6 +2,7 @@
 
 import About from "./components/About";
 import Experience from "./components/Experience";
+import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import { motion } from "framer-motion";
 import Me from "./components/me";
@@ -31,6 +32,7 @@ const Main = () => {
   const sections = [
     { id: "about", Component: About, title: "About" },
     { id: "experience", Component: Experience, title: "Experience" },
+    { id: "skills", Component: Skills, title: "Skills" },
     { id: "projects", Component: Projects, title: "Projects" },
     { id: "me", Component: Me, title: "JeanEudes-dev" },
   ];

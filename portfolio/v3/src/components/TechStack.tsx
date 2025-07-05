@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
   SiReact, SiNextdotjs, SiDjango, SiPython, SiTypescript, SiTailwindcss,
-  SiPostgresql, SiAmazonaws, SiGooglecloud, SiFramer, SiVite
+  SiPostgresql, SiAmazon, SiGooglecloud, SiFramer, SiVite
 } from 'react-icons/si';
 import { FaBrain } from 'react-icons/fa';
 
@@ -13,11 +12,11 @@ interface TechIconProps {
 }
 
 const TechIcon: React.FC<TechIconProps> = ({ icon, name }) => (
-  <div className="flex flex-col items-center p-4 bg-dark-surface rounded-lg shadow-lg transition-transform transform hover:scale-105 group animate-node-pulse">
-    <div className="text-4xl text-accent-blue group-hover:text-accent-green transition-colors duration-300">
+  <div className="flex flex-col items-center p-4 bg-gray-dark rounded-lg shadow-lg transition-transform transform hover:scale-105 group">
+    <div className="text-4xl text-white group-hover:text-gray-light transition-colors duration-300">
       {icon}
     </div>
-    <p className="mt-2 text-sm font-medium text-text-light group-hover:text-accent-green transition-colors duration-300">
+    <p className="mt-2 text-sm font-medium text-white group-hover:text-gray-light transition-colors duration-300">
       {name}
     </p>
   </div>
@@ -32,7 +31,7 @@ const TechStack: React.FC = () => {
     { icon: <SiTypescript />, name: 'TypeScript' },
     { icon: <SiTailwindcss />, name: 'TailwindCSS' },
     { icon: <SiPostgresql />, name: 'PostgreSQL' },
-    { icon: <SiAmazonaws />, name: 'AWS' },
+    { icon: <SiAmazon />, name: 'AWS' },
     { icon: <SiGooglecloud />, name: 'GCP' },
     { icon: <FaBrain />, name: 'AI/ML' }, // Using FaBrain for LangChain/GPT-4
     { icon: <SiFramer />, name: 'Framer Motion' },
@@ -55,9 +54,9 @@ const TechStack: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-dark-bg">
+    <section className="py-20 bg-black text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-accent-blue mb-12 animate-fade-in-up">My Tech Stack</h2>
+        <h2 className="text-4xl font-bold text-center text-white mb-12">My Tech Stack</h2>
         <motion.div
           className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6"
           variants={containerVariants}

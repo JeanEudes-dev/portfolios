@@ -1,5 +1,6 @@
 "use client";
 import Sidebar from "./components/Sidebar";
+import ScrollProgress from "./components/ScrollProgress";
 import "./globals.css";
 import { useRef, useEffect } from "react";
 
@@ -64,6 +65,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta name="twitter:image" content="/me.jpg" />
       </head>
       <body className=" dot-bg">
+        <ScrollProgress />
         <div className="lg:flex ">
           <Sidebar />
           <main className="lg:ml-auto w-full lg:w-[52%] lg:p-8 flex flex-col h-screen">

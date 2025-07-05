@@ -17,7 +17,7 @@ const ThemeSwitcher: React.FC = () => {
 
   return (
     <button
-      className="p-2 rounded-full bg-dark-surface text-accent-blue hover:bg-dark-surface/70 transition-colors duration-300 shadow-lg"
+      className="p-2 rounded-full bg-gray-medium text-white hover:bg-gray-dark transition-colors duration-300 shadow-lg"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
     >
       {theme === 'dark' ? <FaSun className="text-xl" /> : <FaMoon className="text-xl" />}
