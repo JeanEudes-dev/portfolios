@@ -1,33 +1,37 @@
 import React from "react";
 
 const About = () => {
-    return (
-
-        <div className="max-w-4xl mx-auto">
-            <p className="mb-4">
-                Hi, I’m <strong>Jean-Eudes Assogba</strong>, a passionate and dedicated software
-                engineering student currently residing in <strong>Kyrenia, Cyprus</strong>. I
-                specialize in designing and developing <strong>modern, scalable, and user-friendly web applications</strong>, combining technical precision with an intuitive user experience.
-            </p>
-            <p className="mb-4">
-                I’ve earned the <strong>IBM Full Stack Software Developer certification</strong>,
-                which has equipped me with industry-relevant skills in technologies such as
-                <strong> Python, Django, Flask, React, and TypeScript</strong>. I constantly strive to
-                improve and stay updated with the latest trends in software development.
-            </p>
-            <p className="mb-4">
-                My <strong>career goal</strong> is to secure a role as a full-stack, front-end, or back-end
-                developer in 2025, applying my skills to create impactful and innovative applications. I
-                am also on track to graduate with my <strong>Bachelor’s degree in Software Engineering by February 2026</strong>, a milestone I’m eager to achieve.
-            </p>
-            <p className="mb-4">
-                I have a <strong>strong GitHub portfolio</strong> showcasing various projects, some with
-                live previews that highlight my problem-solving skills and coding expertise. My dedication
-                to growth and collaboration is evident in my active engagement with the LinkedIn developer
-                community and continuous learning mindset.
-            </p>
-        </div>
-    );
+  return (
+    <section className="max-w-4xl mx-auto px-4 py-10 text-gray-300">
+      {/* <h2 className="text-3xl font-bold mb-6 text-white">About Me</h2> */}
+      <div className="space-y-5 leading-relaxed text-lg">
+        <p>
+          I&apos;m <strong className="text-white">Jean-Eudes Assogba</strong>, a
+          full-stack software engineer specializing in high-performance web
+          applications, AI-powered tools, and seamless user experiences. I
+          combine strong backend architecture with sleek, scalable frontends
+          using{" "}
+          <strong className="text-white">
+            React, TypeScript, Django, Python
+          </strong>
+          , and modern AI APIs.
+        </p>
+        <p>
+          I build systems that are fast, stable, and production-ready — whether
+          it’s an intelligent expert marketplace, a real-time dashboard, or an
+          AI-enhanced platform. My approach is clear: ship clean code,
+          prioritize UX, and solve real problems with precision.
+        </p>
+        <p>
+          From startups to solo projects, I’ve delivered robust, maintainable
+          solutions across multiple stacks — all showcased on my{" "}
+          <strong className="text-white">GitHub</strong>. I’m currently open to
+          full-time remote roles where innovation, execution, and engineering
+          excellence meet.
+        </p>
+      </div>
+    </section>
+  );
 };
 
 export default About;
