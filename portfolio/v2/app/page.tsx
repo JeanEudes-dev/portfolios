@@ -6,8 +6,10 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import { motion } from "framer-motion";
 import Me from "./components/me";
+import { useTranslation } from "react-i18next";
 
 const Main = () => {
+  const { t } = useTranslation();
   // useEffect(() => {
   //   const handleScroll = () => {
   //     const sections = ["about", "experience", "projects", "me"];
@@ -30,11 +32,11 @@ const Main = () => {
   // }, []);
 
   const sections = [
-    { id: "about", Component: About, title: "About" },
-    { id: "experience", Component: Experience, title: "Experience" },
-    { id: "skills", Component: Skills, title: "Skills" },
-    { id: "projects", Component: Projects, title: "Projects" },
-    { id: "me", Component: Me, title: "JeanEudes-dev" },
+    { id: "about", Component: About, title: t('sections.about') },
+    { id: "experience", Component: Experience, title: t('sections.experience') },
+    { id: "skills", Component: Skills, title: t('sections.skills') },
+    { id: "projects", Component: Projects, title: t('sections.projects') },
+    { id: "me", Component: Me, title: t('sections.me') },
   ];
 
   return (

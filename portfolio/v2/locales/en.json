@@ -1,0 +1,140 @@
+{
+  "name": "Jean-Eudes Assogba",
+  "role": "Full-Stack Software Engineer",
+  "description": "I design and develop high-quality, modern, and scalable web applications.",
+  "nav": {
+    "about": "About",
+    "experience": "Experience", 
+    "skills": "Skills",
+    "projects": "Projects"
+  },
+  "about": {
+    "intro": "I'm <strong>Jean-Eudes Assogba</strong>, a full-stack software engineer specializing in high-performance web applications, AI-powered tools, and seamless user experiences. I combine strong backend architecture with sleek, scalable frontends using <strong>React, TypeScript, Django, Python</strong>, and modern AI APIs.",
+    "approach": "I build systems that are fast, stable, and production-ready — whether it's an intelligent expert marketplace, a real-time dashboard, or an AI-enhanced platform. My approach is clear: ship clean code, prioritize UX, and solve real problems with precision.",
+    "experience": "From startups to solo projects, I've delivered robust, maintainable solutions across multiple stacks — all showcased on my <strong>GitHub</strong>. I'm currently open to full-time remote roles where innovation, execution, and engineering excellence meet."
+  },
+  "experience": {
+    "experiences": [
+      {
+        "period": "2024 — Present",
+        "title": "AI Engineering Intern",
+        "company": "PM-Accelerator",
+        "description": "Refactored Voiceflow-based cost estimation logic, boosting pricing accuracy from 60% to 81%. Improved user completion rates by 40% and collaborated cross-functionally under fast-paced agile cycles.",
+        "ariaLabel": "AI Engineering Intern at PM-Accelerator (opens in a new tab)"
+      },
+      {
+        "period": "2023 — 2024",
+        "title": "Frontend Developer",
+        "company": "RDU, TRNC",
+        "description": "Built a Club Management System adopted by 10+ clubs and 2,000+ students. Integrated automated event scheduling and real-time announcements, increasing student engagement by 50%.",
+        "ariaLabel": "Frontend Developer at RDU, TRNC (opens in a new tab)"
+      },
+      {
+        "period": "2023",
+        "title": "Full-Stack Developer",
+        "company": "RDU, TRNC",
+        "description": "Led development of a financial dashboard reducing transaction processing time by 55%. Enhanced support systems, cutting helpdesk wait times by 75%.",
+        "ariaLabel": "Full-Stack Developer at RDU, TRNC (opens in a new tab)"
+      },
+      {
+        "period": "2023 — Present",
+        "title": "Freelance Full-Stack Developer",
+        "company": "Independent",
+        "description": "Delivered 20+ websites and web apps across e-commerce, portfolios, and SaaS. Migrated legacy stacks, built custom CMS tools, and increased client sales through SEO-optimized UX.",
+        "ariaLabel": "Freelance Full-Stack Developer at Independent (opens in a new tab)"
+      },
+      {
+        "period": "2022 — Present",
+        "title": "Teaching Assistant",
+        "company": "RDU, TRNC",
+        "description": "Tutored 500+ students in C++ and software fundamentals. Boosted class performance from 65% to 94% via live code reviews and guided practice.",
+        "ariaLabel": "Teaching Assistant at RDU, TRNC (opens in a new tab)"
+      },
+      {
+        "period": "2024",
+        "title": "IBM Certified Full Stack Developer",
+        "company": "Coursera",
+        "description": "Completed 100+ hours of real-world projects using React, Django, Flask, and Docker. Gained full-stack cloud deployment expertise across multiple stacks.",
+        "ariaLabel": "IBM Certified Full Stack Developer at Coursera (opens in a new tab)"
+      }
+    ]
+  },
+  "skills": {
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps & Tools",
+      "ai": "AI & Automation"
+    },
+    "additional": "Additional Expertise",
+    "technologiesUsed": "Technologies used"
+  },
+  "projects": {
+    "preview": "Preview",
+    "viewMore": "View More",
+    "list": [
+      {
+        "title": "RenoSmarter.ai – Voiceflow Cost Estimator",
+        "description": "AI-driven home renovation cost estimation app built with Voiceflow, Airtable, and Python. Enhanced pricing logic from 60% to 81% accuracy and boosted completion rates by 40%."
+      },
+      {
+        "title": "BrollyHub – AI Expert Marketplace",
+        "description": "GPT-powered platform for expert booking, smart offers, file shelves, calendar sync, and real-time chat/video calls. Serves 500+ users with seamless AI integration."
+      },
+      {
+        "title": "Aveem University System",
+        "description": "Full ERP for academic operations across finance, grading, and notifications for 2,000+ users. Built with React, Django, and PostgreSQL, deployed on AWS EC2."
+      },
+      {
+        "title": "Dynamiqtec – AI-Powered Blog",
+        "description": "Minimalist, multilingual personal blog and portfolio site with blazing-fast MDX content and Gemma-based translation via API."
+      },
+      {
+        "title": "Spotter – Trip Planner App",
+        "description": "AI-assisted travel planner that helps users create, organize, and visualize trips interactively. Built with React and deployed on Vercel."
+      },
+      {
+        "title": "Bookify – AI Book Recommendation App",
+        "description": "Book discovery and recommendation web app with real-time search across 10,000+ titles. Built using Django and React."
+      },
+      {
+        "title": "Sentifeel – AI Sentiment Classifier",
+        "description": "GPT-4-powered web classifier achieving 90% accuracy on 5K+ text entries. Built with React for a sleek and fast UI."
+      },
+      {
+        "title": "Readme Converter – Markdown to PDF",
+        "description": "Developer-focused SPA for converting markdown to PDF/HTML with live preview and export capabilities."
+      },
+      {
+        "title": "Personalized AI Chat Assistant",
+        "description": "Conversational AI assistant built with React and OpenAI APIs. Supports context awareness and multi-turn interactions."
+      },
+      {
+        "title": "Journal PWA – Offline Notes App",
+        "description": "Progressive Web App for journaling and note-taking, supporting offline sync, secure storage, and a clean mobile interface."
+      }
+    ]
+  },
+  "sections": {
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "me": "JeanEudes-dev"
+  },
+  "resume": {
+    "view": "View",
+    "text": "Résumé"
+  },
+  "language": {
+    "current": "English",
+    "switch": "Switch to French",
+    "label": "Language"
+  },
+  "meta": {
+    "title": "Jean-Eudes Assogba | Portfolio",
+    "description": "Jean-Eudes Assogba - Full-Stack Software Engineer portfolio website showcasing skills, experiences, and projects.",
+    "keywords": "Full-Stack Developer, Software Engineer, Jean-Eudes Assogba, React, Python, Portfolio, Web Development",
+    "ogDescription": "Explore the portfolio of Jean-Eudes Assogba, a passionate Full-Stack Software Engineer."
+  }
+}

@@ -1,14 +1,24 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
-  const experiences = [
+  const { t } = useTranslation();
+  const experiences = t('experience.experiences', { returnObjects: true }) as Array<{
+    period: string;
+    title: string;
+    company: string;
+    description: string;
+    ariaLabel: string;
+  }>;
+  
+  const experienceData = [
     {
-      period: "2024 — Present",
-      title: "AI Engineering Intern",
-      company: "PM-Accelerator",
-      link: "#", // Add actual link if available
-      description:
-        "Refactored Voiceflow-based cost estimation logic, boosting pricing accuracy from 60% to 81%. Improved user completion rates by 40% and collaborated cross-functionally under fast-paced agile cycles.",
+      period: experiences[0]?.period || "2024 — Present",
+      title: experiences[0]?.title || "AI Engineering Intern",
+      company: experiences[0]?.company || "PM-Accelerator",
+      link: "#",
+      description: experiences[0]?.description || "",
+      ariaLabel: experiences[0]?.ariaLabel || "",
       technologies: [
         "Voiceflow",
         "AI Prompting",
@@ -19,12 +29,12 @@ const Experience = () => {
       ],
     },
     {
-      period: "2023 — 2024",
-      title: "Frontend Developer",
-      company: "RDU, TRNC",
+      period: experiences[1]?.period || "2023 — 2024",
+      title: experiences[1]?.title || "Frontend Developer",
+      company: experiences[1]?.company || "RDU, TRNC",
       link: "https://rdu.edu.tr",
-      description:
-        "Built a Club Management System adopted by 10+ clubs and 2,000+ students. Integrated automated event scheduling and real-time announcements, increasing student engagement by 50%.",
+      description: experiences[1]?.description || "",
+      ariaLabel: experiences[1]?.ariaLabel || "",
       technologies: [
         "React",
         "Tailwind CSS",
@@ -34,12 +44,12 @@ const Experience = () => {
       ],
     },
     {
-      period: "2023",
-      title: "Full-Stack Developer",
-      company: "RDU, TRNC",
+      period: experiences[2]?.period || "2023",
+      title: experiences[2]?.title || "Full-Stack Developer",
+      company: experiences[2]?.company || "RDU, TRNC",
       link: "https://rdu.edu.tr",
-      description:
-        "Led development of a financial dashboard reducing transaction processing time by 55%. Enhanced support systems, cutting helpdesk wait times by 75%.",
+      description: experiences[2]?.description || "",
+      ariaLabel: experiences[2]?.ariaLabel || "",
       technologies: [
         "React",
         "Django",
@@ -48,12 +58,12 @@ const Experience = () => {
       ],
     },
     {
-      period: "2023 — Present",
-      title: "Freelance Full-Stack Developer",
-      company: "Independent",
+      period: experiences[3]?.period || "2023 — Present",
+      title: experiences[3]?.title || "Freelance Full-Stack Developer",
+      company: experiences[3]?.company || "Independent",
       link: "https://github.com/JeanEudes-dev",
-      description:
-        "Delivered 20+ websites and web apps across e-commerce, portfolios, and SaaS. Migrated legacy stacks, built custom CMS tools, and increased client sales through SEO-optimized UX.",
+      description: experiences[3]?.description || "",
+      ariaLabel: experiences[3]?.ariaLabel || "",
       technologies: [
         "Next.js",
         "React",
@@ -65,12 +75,12 @@ const Experience = () => {
       ],
     },
     {
-      period: "2022 — Present",
-      title: "Teaching Assistant",
-      company: "RDU, TRNC",
+      period: experiences[4]?.period || "2022 — Present",
+      title: experiences[4]?.title || "Teaching Assistant",
+      company: experiences[4]?.company || "RDU, TRNC",
       link: "https://rdu.edu.tr",
-      description:
-        "Tutored 500+ students in C++ and software fundamentals. Boosted class performance from 65% to 94% via live code reviews and guided practice.",
+      description: experiences[4]?.description || "",
+      ariaLabel: experiences[4]?.ariaLabel || "",
       technologies: [
         "C++",
         "Data Structures",
@@ -79,12 +89,12 @@ const Experience = () => {
       ],
     },
     {
-      period: "2024",
-      title: "IBM Certified Full Stack Developer",
-      company: "Coursera",
+      period: experiences[5]?.period || "2024",
+      title: experiences[5]?.title || "IBM Certified Full Stack Developer",
+      company: experiences[5]?.company || "Coursera",
       link: "https://coursera.org",
-      description:
-        "Completed 100+ hours of real-world projects using React, Django, Flask, and Docker. Gained full-stack cloud deployment expertise across multiple stacks.",
+      description: experiences[5]?.description || "",
+      ariaLabel: experiences[5]?.ariaLabel || "",
       technologies: [
         "React",
         "Python",
@@ -99,7 +109,7 @@ const Experience = () => {
 
   return (
     <ol className="group/list space-y-12">
-      {experiences.map((experience, index) => (
+      {experienceData.map((experience, index) => (
         <li key={index} className="relative group">
           <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
           <div className="relative grid pb-1 sm:grid-cols-8 sm:gap-8 md:gap-4">
@@ -117,7 +127,7 @@ const Experience = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                     className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 text-base group/link"
-                    aria-label={`${experience.title} at ${experience.company} (opens in a new tab)`}
+                    aria-label={experience.ariaLabel}
                   >
                     <span>{experience.title} · &nbsp;&nbsp;&nbsp;</span>
                     <span className="inline-block">
@@ -144,7 +154,7 @@ const Experience = () => {
               </p>
               <ul
                 className="mt-2 flex flex-wrap"
-                aria-label="Technologies used"
+                aria-label={t('skills.technologiesUsed')}
               >
                 {experience.technologies.map((tech, idx) => (
                   <li key={idx} className="mr-1.5 mt-2">

@@ -5,11 +5,14 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 import ProjectModal from "./ProjectModal";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Sidebar = () => {
   const [activeSection, setActiveSection] = useState("about");
   const [resumeOpen, setResumeOpen] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,14 +49,16 @@ const Sidebar = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="text-3xl lg:text-5xl font-bold ">Jean-Eudes Assogba</h1>
+        <h1 className="text-3xl lg:text-5xl font-bold ">{t('name')}</h1>
         <h2 className="text-md lg:text-xl  mt-2">
-          Full-Stack Software Engineer
+          {t('role')}
         </h2>
         <p className="hidden lg:block text-sm lg:text-md  mt-4 leading-relaxed">
-          I design and develop high-quality, modern, and scalable web
-          applications.
+          {t('description')}
         </p>
+        <div className="mt-4 lg:mt-6">
+          <LanguageSwitcher />
+        </div>
       </motion.div>
 
       {/* Navigation */}
@@ -66,8 +71,8 @@ const Sidebar = () => {
         }}
       >
         <motion.ul className="space-y-8">
-          {["About", "Experience", "Skills", "Projects"].map((item, index) => {
-            const sectionId = item.toLowerCase();
+          {["about", "experience", "skills", "projects"].map((item, index) => {
+            const sectionId = item;
             const isActive = activeSection === sectionId;
 
             return (
@@ -102,7 +107,7 @@ const Sidebar = () => {
                         : "text-slate-500 group-hover:text-slate-200 group-hover:scale-105 group-hover:translate-x-2"
                     } transition motion-reduce:transition-none`}
                   >
-                    {item}
+                    {t(`nav.${item}`)}
                   </span>
                 </Link>
               </motion.li>
@@ -119,9 +124,9 @@ const Sidebar = () => {
             aria-label="View Full Résumé"
           >
             <span>
-              View&nbsp;
+              {t('resume.view')}&nbsp;
               <span className="inline-block">
-                Résumé
+                {t('resume.text')}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"

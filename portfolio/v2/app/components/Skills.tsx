@@ -2,8 +2,10 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
   const [inView, setInView] = useState(false);
   const skillsRef = useRef<HTMLDivElement>(null);
 
@@ -26,7 +28,7 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      category: "Frontend",
+      category: t('skills.categories.frontend'),
       icon: "🎨",
       color: "from-blue-400 to-purple-500",
       bgGlow: "bg-blue-500/10",
@@ -40,7 +42,7 @@ const Skills = () => {
       ],
     },
     {
-      category: "Backend",
+      category: t('skills.categories.backend'),
       icon: "⚙️",
       color: "from-green-400 to-teal-500",
       bgGlow: "bg-green-500/10",
@@ -54,7 +56,7 @@ const Skills = () => {
       ],
     },
     {
-      category: "DevOps & Tools",
+      category: t('skills.categories.devops'),
       icon: "🔧",
       color: "from-orange-400 to-red-500",
       bgGlow: "bg-orange-500/10",
@@ -68,7 +70,7 @@ const Skills = () => {
       ],
     },
     {
-      category: "AI & Automation",
+      category: t('skills.categories.ai'),
       icon: "🤖",
       color: "from-purple-400 to-pink-500",
       bgGlow: "bg-purple-500/10",
@@ -209,7 +211,7 @@ const Skills = () => {
               🎯
             </motion.span>
             <h3 className="text-xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent">
-              Additional Expertise
+              {t('skills.additional')}
             </h3>
           </div>
 

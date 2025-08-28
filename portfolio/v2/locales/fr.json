@@ -1,0 +1,140 @@
+{
+  "name": "Jean-Eudes Assogba",
+  "role": "Ingénieur Logiciel Full-Stack",
+  "description": "Je conçois et développe des applications web modernes, de haute qualité et évolutives.",
+  "nav": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "skills": "Compétences", 
+    "projects": "Projets"
+  },
+  "about": {
+    "intro": "Je suis <strong>Jean-Eudes Assogba</strong>, un ingénieur logiciel full-stack spécialisé dans les applications web haute performance, les outils alimentés par l'IA, et les expériences utilisateur fluides. Je combine une architecture backend solide avec des frontends élégants et évolutifs utilisant <strong>React, TypeScript, Django, Python</strong>, et des API IA modernes.",
+    "approach": "Je construis des systèmes rapides, stables et prêts pour la production — qu'il s'agisse d'une marketplace d'experts intelligente, d'un tableau de bord en temps réel, ou d'une plateforme améliorée par l'IA. Mon approche est claire : livrer du code propre, prioriser l'UX, et résoudre de vrais problèmes avec précision.",
+    "experience": "Des startups aux projets personnels, j'ai livré des solutions robustes et maintenables sur plusieurs stacks — toutes présentées sur mon <strong>GitHub</strong>. Je suis actuellement ouvert aux postes à distance à temps plein où innovation, exécution et excellence en ingénierie se rencontrent."
+  },
+  "experience": {
+    "experiences": [
+      {
+        "period": "2024 — Présent",
+        "title": "Stagiaire en IA",
+        "company": "PM-Accelerator",
+        "description": "Refactorisé la logique d'estimation des coûts basée sur Voiceflow, améliorant la précision tarifaire de 60% à 81%. Amélioration des taux d'achèvement utilisateur de 40% et collaboration interfonctionnelle sous des cycles agiles rapides.",
+        "ariaLabel": "Stagiaire en IA chez PM-Accelerator (s'ouvre dans un nouvel onglet)"
+      },
+      {
+        "period": "2023 — 2024",
+        "title": "Développeur Frontend",
+        "company": "RDU, TRNC",
+        "description": "Création d'un système de gestion de clubs adopté par 10+ clubs et 2 000+ étudiants. Intégration de la planification d'événements automatisée et d'annonces en temps réel, augmentant l'engagement étudiant de 50%.",
+        "ariaLabel": "Développeur Frontend chez RDU, TRNC (s'ouvre dans un nouvel onglet)"
+      },
+      {
+        "period": "2023",
+        "title": "Développeur Full-Stack",
+        "company": "RDU, TRNC",
+        "description": "Direction du développement d'un tableau de bord financier réduisant le temps de traitement des transactions de 55%. Amélioration des systèmes de support, réduisant les temps d'attente du support technique de 75%.",
+        "ariaLabel": "Développeur Full-Stack chez RDU, TRNC (s'ouvre dans un nouvel onglet)"
+      },
+      {
+        "period": "2023 — Présent",
+        "title": "Développeur Full-Stack Freelance",
+        "company": "Indépendant",
+        "description": "Livré 20+ sites web et applications web à travers l'e-commerce, portfolios et SaaS. Migration de stacks legacy, création d'outils CMS personnalisés, et augmentation des ventes clients grâce à l'UX optimisée SEO.",
+        "ariaLabel": "Développeur Full-Stack Freelance chez Indépendant (s'ouvre dans un nouvel onglet)"
+      },
+      {
+        "period": "2022 — Présent",
+        "title": "Assistant d'Enseignement",
+        "company": "RDU, TRNC",
+        "description": "Tutorat de 500+ étudiants en C++ et fondamentaux logiciels. Amélioration des performances de classe de 65% à 94% via des revues de code en direct et pratique guidée.",
+        "ariaLabel": "Assistant d'Enseignement chez RDU, TRNC (s'ouvre dans un nouvel onglet)"
+      },
+      {
+        "period": "2024",
+        "title": "Développeur Full Stack Certifié IBM",
+        "company": "Coursera",
+        "description": "Complété 100+ heures de projets concrets utilisant React, Django, Flask et Docker. Expertise acquise en déploiement cloud full-stack sur plusieurs stacks.",
+        "ariaLabel": "Développeur Full Stack Certifié IBM chez Coursera (s'ouvre dans un nouvel onglet)"
+      }
+    ]
+  },
+  "skills": {
+    "categories": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps & Outils",
+      "ai": "IA & Automatisation"
+    },
+    "additional": "Expertise Supplémentaire",
+    "technologiesUsed": "Technologies utilisées"
+  },
+  "projects": {
+    "preview": "Aperçu",
+    "viewMore": "Voir Plus",
+    "list": [
+      {
+        "title": "RenoSmarter.ai – Estimateur de Coûts Voiceflow",
+        "description": "Application d'estimation de coûts de rénovation domiciliaire pilotée par l'IA construite avec Voiceflow, Airtable et Python. Logique tarifaire améliorée de 60% à 81% de précision et taux d'achèvement augmentés de 40%."
+      },
+      {
+        "title": "BrollyHub – Marketplace d'Experts IA",
+        "description": "Plateforme alimentée par GPT pour la réservation d'experts, offres intelligentes, étagères de fichiers, synchronisation de calendrier et appels chat/vidéo en temps réel. Sert 500+ utilisateurs avec intégration IA fluide."
+      },
+      {
+        "title": "Système Universitaire Aveem",
+        "description": "ERP complet pour les opérations académiques à travers finances, notation et notifications pour 2 000+ utilisateurs. Construit avec React, Django et PostgreSQL, déployé sur AWS EC2."
+      },
+      {
+        "title": "Dynamiqtec – Blog Alimenté par l'IA",
+        "description": "Site de blog personnel et portfolio minimaliste et multilingue avec contenu MDX ultra-rapide et traduction basée sur Gemma via API."
+      },
+      {
+        "title": "Spotter – App Planificateur de Voyages",
+        "description": "Planificateur de voyages assisté par IA qui aide les utilisateurs à créer, organiser et visualiser des voyages interactivement. Construit avec React et déployé sur Vercel."
+      },
+      {
+        "title": "Bookify – App de Recommandation de Livres IA",
+        "description": "Application web de découverte et recommandation de livres avec recherche en temps réel sur 10 000+ titres. Construite avec Django et React."
+      },
+      {
+        "title": "Sentifeel – Classificateur de Sentiment IA",
+        "description": "Classificateur web alimenté par GPT-4 atteignant 90% de précision sur 5K+ entrées de texte. Construit avec React pour une interface utilisateur élégante et rapide."
+      },
+      {
+        "title": "Readme Converter – Markdown vers PDF",
+        "description": "SPA axée développeur pour convertir markdown en PDF/HTML avec aperçu en direct et capacités d'exportation."
+      },
+      {
+        "title": "Assistant de Chat IA Personnalisé",
+        "description": "Assistant IA conversationnel construit avec React et les API OpenAI. Prend en charge la conscience du contexte et les interactions multi-tours."
+      },
+      {
+        "title": "Journal PWA – App de Notes Hors Ligne",
+        "description": "Application Web Progressive pour journalisation et prise de notes, prenant en charge la synchronisation hors ligne, stockage sécurisé et interface mobile propre."
+      }
+    ]
+  },
+  "sections": {
+    "about": "À propos",
+    "experience": "Expérience",
+    "skills": "Compétences",
+    "projects": "Projets",
+    "me": "JeanEudes-dev"
+  },
+  "resume": {
+    "view": "Voir le",
+    "text": "CV"
+  },
+  "language": {
+    "current": "Français",
+    "switch": "Passer à l'anglais",
+    "label": "Langue"
+  },
+  "meta": {
+    "title": "Jean-Eudes Assogba | Portfolio",
+    "description": "Jean-Eudes Assogba - Site portfolio d'un Ingénieur Logiciel Full-Stack présentant ses compétences, expériences et projets.",
+    "keywords": "Développeur Full-Stack, Ingénieur Logiciel, Jean-Eudes Assogba, React, Python, Portfolio, Développement Web",
+    "ogDescription": "Explorez le portfolio de Jean-Eudes Assogba, un Ingénieur Logiciel Full-Stack passionné."
+  }
+}
