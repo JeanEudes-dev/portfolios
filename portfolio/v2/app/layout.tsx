@@ -1,6 +1,8 @@
 "use client";
 import Sidebar from "./components/Sidebar";
 import ScrollProgress from "./components/ScrollProgress";
+import SEO from "./components/SEO";
+import PerformanceOptimizations from "./components/PerformanceOptimizations";
 import "./globals.css";
 import { useRef, useEffect } from "react";
 import "../lib/i18n";
@@ -9,7 +11,7 @@ import { useLanguageDetection } from "../hooks/useLanguageDetection";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const lightEffectRef = useRef<HTMLDivElement>(null);
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const { isInitialized } = useLanguageDetection();
 
   useEffect(() => {
@@ -56,36 +58,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="description"
-          content={t('meta.description')}
-        />
-        <meta name="author" content="Jean-Eudes Assogba" />
-        <meta
-          name="keywords"
-          content={t('meta.keywords')}
-        />
-        <meta name="robots" content="index, follow" />
-        <title>{t('meta.title')}</title>
         <link rel="icon" href="/portfolios/favicon.ico" />
-        <meta property="og:title" content={t('meta.title')} />
-        <meta
-          property="og:description"
-          content={t('meta.ogDescription')}
-        />
-        <meta property="og:image" content="/me.jpg" />
-        <meta
-          property="og:url"
-          content="https://jeaneudes-dev.github.io/portfolios"
-        />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={t('meta.title')} />
-        <meta
-          name="twitter:description"
-          content={t('meta.ogDescription')}
-        />
-        <meta name="twitter:image" content="/me.jpg" />
+        
+        {/* SEO Component handles all meta tags, structured data, etc. */}
+        <SEO />
+        
+        {/* Performance optimizations */}
+        <PerformanceOptimizations />
       </head>
       <body className=" dot-bg">
         <ScrollProgress />

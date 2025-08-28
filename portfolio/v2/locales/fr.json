@@ -122,6 +122,21 @@
     "projects": "Projets",
     "me": "JeanEudes-dev"
   },
+  "seo": {
+    "aboutTitle": "À propos de Jean-Eudes Assogba - Ingénieur Logiciel Full-Stack",
+    "experienceTitle": "Expérience Professionnelle - Jean-Eudes Assogba",
+    "skillsTitle": "Compétences Techniques - Jean-Eudes Assogba",
+    "projectsTitle": "Portfolio de Projets - Jean-Eudes Assogba",
+    "structuredData": {
+      "jobTitle": "Ingénieur Logiciel Full-Stack",
+      "description": "Ingénieur Logiciel Full-Stack expérimenté spécialisé en technologies web modernes, intégration IA et applications évolutives",
+      "worksFor": "Développeur Freelance",
+      "location": "À distance",
+      "alumniOf": "Université RDU",
+      "knowsAbout": ["JavaScript", "TypeScript", "React", "Next.js", "Python", "Django", "PostgreSQL", "Développement IA", "Développement Web", "Développement Mobile"],
+      "skills": "React, Next.js, TypeScript, Python, Django, PostgreSQL, JavaScript, HTML, CSS, Tailwind CSS, Node.js, Express, MongoDB, Git, Docker, AWS, APIs REST, GraphQL, Intégration IA/ML"
+    }
+  },
   "resume": {
     "view": "Voir le",
     "text": "CV"
@@ -134,9 +149,23 @@
     "browserDetected": "Détecté du navigateur"
   },
   "meta": {
-    "title": "Jean-Eudes Assogba | Portfolio",
-    "description": "Jean-Eudes Assogba - Site portfolio d'un Ingénieur Logiciel Full-Stack présentant ses compétences, expériences et projets.",
-    "keywords": "Développeur Full-Stack, Ingénieur Logiciel, Jean-Eudes Assogba, React, Python, Portfolio, Développement Web",
-    "ogDescription": "Explorez le portfolio de Jean-Eudes Assogba, un Ingénieur Logiciel Full-Stack passionné."
+    "title": "Jean-Eudes Assogba | Portfolio Ingénieur Logiciel Full-Stack",
+    "titleTemplate": "Jean-Eudes Assogba - %s | Ingénieur Logiciel Full-Stack",
+    "description": "Jean-Eudes Assogba - Ingénieur Logiciel Full-Stack expérimenté spécialisé en React, Next.js, Python, Django et applications web alimentées par l'IA. Disponible pour opportunités à distance.",
+    "keywords": "Développeur Full-Stack, Ingénieur Logiciel, Jean-Eudes Assogba, Développeur React, Développeur Next.js, Développeur Python, Développeur Django, Développeur JavaScript, Développeur TypeScript, Développement Web, Développeur Frontend, Développeur Backend, Développeur IA, Développeur à Distance, Développeur Freelance, Portfolio, Applications Web, Développement Mobile, Cloud Computing, DevOps",
+    "ogTitle": "Jean-Eudes Assogba - Portfolio Ingénieur Logiciel Full-Stack",
+    "ogDescription": "Découvrez le portfolio de Jean-Eudes Assogba, un Ingénieur Logiciel Full-Stack expérimenté avec une expertise en technologies web modernes, intégration IA et applications évolutives. Consultez projets, compétences et expérience.",
+    "ogType": "website",
+    "ogLocale": "fr_FR",
+    "twitterTitle": "Jean-Eudes Assogba - Ingénieur Logiciel Full-Stack",
+    "twitterDescription": "Ingénieur Logiciel Full-Stack spécialisé en React, Python et applications alimentées par l'IA. Consultez mon portfolio et projets récents.",
+    "twitterCard": "summary_large_image",
+    "author": "Jean-Eudes Assogba",
+    "canonicalUrl": "https://jeaneudes-dev.github.io/portfolios?lang=fr",
+    "alternateUrl": "https://jeaneudes-dev.github.io/portfolios",
+    "siteName": "Portfolio Jean-Eudes Assogba",
+    "applicationName": "Portfolio Jean-Eudes Assogba",
+    "generator": "Next.js, React, TypeScript",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
   }
 }

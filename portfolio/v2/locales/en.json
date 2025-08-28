@@ -122,6 +122,21 @@
     "projects": "Projects",
     "me": "JeanEudes-dev"
   },
+  "seo": {
+    "aboutTitle": "About Jean-Eudes Assogba - Full-Stack Software Engineer",
+    "experienceTitle": "Professional Experience - Jean-Eudes Assogba",
+    "skillsTitle": "Technical Skills - Jean-Eudes Assogba",
+    "projectsTitle": "Projects Portfolio - Jean-Eudes Assogba",
+    "structuredData": {
+      "jobTitle": "Full-Stack Software Engineer",
+      "description": "Experienced Full-Stack Software Engineer specializing in modern web technologies, AI integration, and scalable applications",
+      "worksFor": "Freelance Developer",
+      "location": "Remote",
+      "alumniOf": "RDU University",
+      "knowsAbout": ["JavaScript", "TypeScript", "React", "Next.js", "Python", "Django", "PostgreSQL", "AI Development", "Web Development", "Mobile Development"],
+      "skills": "React, Next.js, TypeScript, Python, Django, PostgreSQL, JavaScript, HTML, CSS, Tailwind CSS, Node.js, Express, MongoDB, Git, Docker, AWS, REST APIs, GraphQL, AI/ML Integration"
+    }
+  },
   "resume": {
     "view": "View",
     "text": "Résumé"
@@ -134,9 +149,23 @@
     "browserDetected": "Detected from browser"
   },
   "meta": {
-    "title": "Jean-Eudes Assogba | Portfolio",
-    "description": "Jean-Eudes Assogba - Full-Stack Software Engineer portfolio website showcasing skills, experiences, and projects.",
-    "keywords": "Full-Stack Developer, Software Engineer, Jean-Eudes Assogba, React, Python, Portfolio, Web Development",
-    "ogDescription": "Explore the portfolio of Jean-Eudes Assogba, a passionate Full-Stack Software Engineer."
+    "title": "Jean-Eudes Assogba | Full-Stack Software Engineer Portfolio",
+    "titleTemplate": "Jean-Eudes Assogba - %s | Full-Stack Software Engineer",
+    "description": "Jean-Eudes Assogba - Experienced Full-Stack Software Engineer specializing in React, Next.js, Python, Django, and AI-powered web applications. Available for remote opportunities.",
+    "keywords": "Full-Stack Developer, Software Engineer, Jean-Eudes Assogba, React Developer, Next.js Developer, Python Developer, Django Developer, JavaScript Developer, TypeScript Developer, Web Development, Frontend Developer, Backend Developer, AI Developer, Remote Developer, Freelance Developer, Portfolio, Web Applications, Mobile Development, Cloud Computing, DevOps",
+    "ogTitle": "Jean-Eudes Assogba - Full-Stack Software Engineer Portfolio",
+    "ogDescription": "Explore the portfolio of Jean-Eudes Assogba, an experienced Full-Stack Software Engineer with expertise in modern web technologies, AI integration, and scalable applications. View projects, skills, and experience.",
+    "ogType": "website",
+    "ogLocale": "en_US",
+    "twitterTitle": "Jean-Eudes Assogba - Full-Stack Software Engineer",
+    "twitterDescription": "Full-Stack Software Engineer specializing in React, Python, and AI-powered applications. View my portfolio and recent projects.",
+    "twitterCard": "summary_large_image",
+    "author": "Jean-Eudes Assogba",
+    "canonicalUrl": "https://jeaneudes-dev.github.io/portfolios",
+    "alternateUrl": "https://jeaneudes-dev.github.io/portfolios?lang=fr",
+    "siteName": "Jean-Eudes Assogba Portfolio",
+    "applicationName": "Jean-Eudes Assogba Portfolio",
+    "generator": "Next.js, React, TypeScript",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
   }
 }
