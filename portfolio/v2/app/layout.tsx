@@ -5,10 +5,12 @@ import "./globals.css";
 import { useRef, useEffect } from "react";
 import "../lib/i18n";
 import { useTranslation } from "react-i18next";
+import { useLanguageDetection } from "../hooks/useLanguageDetection";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const lightEffectRef = useRef<HTMLDivElement>(null);
   const { t, i18n } = useTranslation();
+  const { isInitialized } = useLanguageDetection();
 
   useEffect(() => {
     const handleMouseMove = (e: { clientX: number; clientY: number }) => {
@@ -30,6 +32,24 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
+  // Show loading state while language detection is initializing
+  if (!isInitialized) {
+    return (
+      <html lang="en">
+        <head>
+          <meta charSet="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Loading...</title>
+        </head>
+        <body className="dot-bg">
+          <div className="flex items-center justify-center min-h-screen">
+            <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-teal-400"></div>
+          </div>
+        </body>
+      </html>
+    );
+  }
 
   return (
     <html lang={i18n.language}>

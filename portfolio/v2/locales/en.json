@@ -129,7 +129,9 @@
   "language": {
     "current": "English",
     "switch": "Switch to French",
-    "label": "Language"
+    "label": "Language",
+    "autoDetected": "Auto-detected",
+    "browserDetected": "Detected from browser"
   },
   "meta": {
     "title": "Jean-Eudes Assogba | Portfolio",

@@ -2,11 +2,12 @@
 
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const LanguageSwitcher = () => {
   const { i18n, t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [showAutoDetected, setShowAutoDetected] = useState(false);
 
   const languages = [
     { code: 'en', name: 'English', flag: '🇺🇸', shortName: 'EN' },
@@ -18,7 +19,19 @@ const LanguageSwitcher = () => {
   const switchLanguage = (langCode: string) => {
     i18n.changeLanguage(langCode);
     setIsOpen(false);
+    setShowAutoDetected(false);
   };
+
+  useEffect(() => {
+    // Check if language was auto-detected
+    const storedLang = localStorage.getItem('i18nextLng');
+    if (!storedLang && i18n.language) {
+      setShowAutoDetected(true);
+      // Hide the indicator after 3 seconds
+      const timer = setTimeout(() => setShowAutoDetected(false), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [i18n.language]);
 
   return (
     <div className="relative">
@@ -33,6 +46,16 @@ const LanguageSwitcher = () => {
         <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         
         <div className="relative flex items-center space-x-2">
+          {showAutoDetected && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-teal-500/90 text-white text-xs px-2 py-1 rounded-md whitespace-nowrap backdrop-blur-sm"
+            >
+              {t('language.autoDetected')}
+            </motion.div>
+          )}
           <motion.span 
             className="text-lg filter drop-shadow-sm"
             animate={{ rotate: isOpen ? 180 : 0 }}
