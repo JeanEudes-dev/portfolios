@@ -49,7 +49,7 @@ const Skills = () => {
       skills: [
         { name: "Django", level: 85, icon: "🐍" },
         { name: "Python", level: 88, icon: "🐍" },
-        { name: "Flask", level: 80, icon: "🔥" },
+        { name: "Flask", level: 85, icon: "🔥" },
         { name: "PostgreSQL", level: 82, icon: "🐘" },
         { name: "RESTful APIs", level: 87, icon: "🔗" },
         { name: "GraphQL", level: 75, icon: "◈" },
@@ -62,9 +62,9 @@ const Skills = () => {
       bgGlow: "bg-orange-500/10",
       skills: [
         { name: "Git", level: 90, icon: "📝" },
-        { name: "Docker", level: 80, icon: "🐳" },
-        { name: "CI/CD", level: 78, icon: "🔄" },
-        { name: "AWS", level: 75, icon: "☁️" },
+        { name: "Docker", level: 85, icon: "🐳" },
+        { name: "CI/CD", level: 82, icon: "🔄" },
+        { name: "AWS", level: 80, icon: "☁️" },
         { name: "Linux", level: 85, icon: "🐧" },
         { name: "Figma", level: 80, icon: "🎯" },
       ],
@@ -79,7 +79,7 @@ const Skills = () => {
         { name: "AI Prompting", level: 88, icon: "🧠" },
         { name: "Automation", level: 82, icon: "⚡" },
         { name: "Data Analysis", level: 80, icon: "📊" },
-        { name: "Machine Learning", level: 75, icon: "🤖" },
+        { name: "Machine Learning", level: 85, icon: "🤖" },
         { name: "API Integration", level: 90, icon: "🔌" },
       ],
     },
@@ -221,12 +221,16 @@ const Skills = () => {
               "Code Review",
               "Performance Optimization",
               "UX/UI Design",
-              "SEO",
+              "SEO Optimization",
               "Team Leadership",
               "Technical Writing",
               "Problem Solving",
               "Cross-functional Collaboration",
               "Mentorship",
+              "Microservices Architecture",
+              "Enterprise Solutions",
+              "Cloud Architecture",
+              "Database Optimization",
             ].map((skill, index) => (
               <motion.span
                 key={index}

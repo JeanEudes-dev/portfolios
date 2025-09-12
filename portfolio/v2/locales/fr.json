@@ -1,61 +1,62 @@
 {
   "name": "Jean-Eudes Assogba",
-  "role": "Ingénieur Logiciel Full-Stack",
-  "description": "Je conçois et développe des applications web modernes, de haute qualité et évolutives.",
+  "role": "Ingénieur IA | Développeur Full-Stack",
+  "description": "J'architecture des systèmes IA intelligents et des applications web évolutives qui résolvent des problèmes concrets.",
   "nav": {
     "about": "À propos",
     "experience": "Expérience",
     "skills": "Compétences", 
-    "projects": "Projets"
+    "projects": "Projets",
+    "certifications": "Certifications"
   },
   "about": {
-    "intro": "Je suis <strong>Jean-Eudes Assogba</strong>, un ingénieur logiciel full-stack spécialisé dans les applications web haute performance, les outils alimentés par l'IA, et les expériences utilisateur fluides. Je combine une architecture backend solide avec des frontends élégants et évolutifs utilisant <strong>React, TypeScript, Django, Python</strong>, et des API IA modernes.",
-    "approach": "Je construis des systèmes rapides, stables et prêts pour la production — qu'il s'agisse d'une marketplace d'experts intelligente, d'un tableau de bord en temps réel, ou d'une plateforme améliorée par l'IA. Mon approche est claire : livrer du code propre, prioriser l'UX, et résoudre de vrais problèmes avec précision.",
-    "experience": "Des startups aux projets personnels, j'ai livré des solutions robustes et maintenables sur plusieurs stacks — toutes présentées sur mon <strong>GitHub</strong>. Je suis actuellement ouvert aux postes à distance à temps plein où innovation, exécution et excellence en ingénierie se rencontrent."
+    "intro": "Je suis <strong>Jean-Eudes Assogba</strong>, Ingénieur IA et Développeur Full-Stack spécialisé dans la construction d'applications évolutives et prêtes pour la production qui fusionnent l'IA de pointe avec les technologies web modernes. J'architecture des systèmes intelligents utilisant <strong>GPT-4, Gemini AI, React TypeScript, Django, Python</strong>, et des intégrations IA avancées qui résolvent des problèmes concrets à grande échelle.",
+    "approach": "Je conçois et déploie des systèmes IA de bout en bout — des agents autonomes et plateformes IA multi-services aux solutions marketplace d'entreprise servant 500+ utilisateurs. Mon expertise couvre l'automatisation intelligente, les bases de données vectorielles, les systèmes de communication en temps réel, et les architectures full-stack de niveau production avec impact commercial mesurable.",
+    "experience": "En tant que Fondateur de BrollyHub et Ingénieur IA chez RenoSmarter.ai, j'ai construit des systèmes IA de production intégrant GPT-4o, Gemini AI, Stability AI, atteignant 81% d'amélioration de précision et 40% d'augmentation du taux d'achèvement. Je recherche actuellement des opportunités d'architect des applications IA nouvelle génération où l'innovation rencontre l'évolutivité d'entreprise."
   },
   "experience": {
     "experiences": [
       {
-        "period": "2024 — Présent",
-        "title": "Stagiaire en IA",
-        "company": "PM-Accelerator",
-        "description": "Refactorisé la logique d'estimation des coûts basée sur Voiceflow, améliorant la précision tarifaire de 60% à 81%. Amélioration des taux d'achèvement utilisateur de 40% et collaboration interfonctionnelle sous des cycles agiles rapides.",
-        "ariaLabel": "Stagiaire en IA chez PM-Accelerator (s'ouvre dans un nouvel onglet)"
+        "period": "02/2024 — Présent",
+        "title": "Fondateur & Ingénieur Principal",
+        "company": "BrollyHub",
+        "description": "Architecture et développement d'une plateforme marketplace d'experts alimentée par l'IA servant 500+ utilisateurs avec frontend React TypeScript et backend Django. Construction d'un agent IA autonome (Brolly AI) capable de navigation frontend, exécution de fonctions backend, et automatisation de plateforme. Conception de communication WebSocket en temps réel, gestion de calendrier, authentification JWT, et workflows multi-utilisateurs complexes.",
+        "ariaLabel": "Fondateur & Ingénieur Principal chez BrollyHub (s'ouvre dans un nouvel onglet)"
       },
       {
-        "period": "2023 — 2024",
-        "title": "Développeur Frontend",
-        "company": "RDU, TRNC",
-        "description": "Création d'un système de gestion de clubs adopté par 10+ clubs et 2 000+ étudiants. Intégration de la planification d'événements automatisée et d'annonces en temps réel, augmentant l'engagement étudiant de 50%.",
-        "ariaLabel": "Développeur Frontend chez RDU, TRNC (s'ouvre dans un nouvel onglet)"
+        "period": "02/2024 — 08/2024",
+        "title": "Ingénieur IA",
+        "company": "RenoSmarter.ai",
+        "description": "Reconstruction complète de la plateforme RenoSmarter.AI utilisant une architecture full-stack moderne. Reconception du système Voiceflow legacy en plateforme de production Django REST API + React TypeScript. Intégration de multiples services IA : GPT-4o, Gemini AI, Stability AI, implémentation d'un workflow de rénovation en 8 étapes avec tarification basée sur code postal, atteignant 81% d'amélioration de précision et 40% d'amélioration du taux d'achèvement.",
+        "ariaLabel": "Ingénieur IA chez RenoSmarter.ai (s'ouvre dans un nouvel onglet)"
       },
       {
-        "period": "2023",
-        "title": "Développeur Full-Stack",
-        "company": "RDU, TRNC",
-        "description": "Direction du développement d'un tableau de bord financier réduisant le temps de traitement des transactions de 55%. Amélioration des systèmes de support, réduisant les temps d'attente du support technique de 75%.",
-        "ariaLabel": "Développeur Full-Stack chez RDU, TRNC (s'ouvre dans un nouvel onglet)"
+        "period": "06/2023 — Présent",
+        "title": "Développeur Frontend & Architecte Web",
+        "company": "Université Rauf Denktas",
+        "description": "Poste de personnel développant l'infrastructure numérique universitaire. Direction de la conception et du développement du nouveau site web et de la présence numérique de l'université. Construction d'un système de gestion de clubs adopté par 10+ clubs servant 2 000+ étudiants. Développement d'un système de planification d'événements automatisé et d'annonces, augmentant l'engagement de 50%.",
+        "ariaLabel": "Développeur Frontend & Architecte Web chez Université Rauf Denktas (s'ouvre dans un nouvel onglet)"
       },
       {
-        "period": "2023 — Présent",
+        "period": "01/2021 — Présent",
         "title": "Développeur Full-Stack Freelance",
-        "company": "Indépendant",
-        "description": "Livré 20+ sites web et applications web à travers l'e-commerce, portfolios et SaaS. Migration de stacks legacy, création d'outils CMS personnalisés, et augmentation des ventes clients grâce à l'UX optimisée SEO.",
-        "ariaLabel": "Développeur Full-Stack Freelance chez Indépendant (s'ouvre dans un nouvel onglet)"
+        "company": "Contractant Indépendant",
+        "description": "Contractant indépendant livrant des solutions web personnalisées pour divers clients. Livré 20+ sites web et applications web de production utilisant React, Next.js, et Django. Construction de plateformes e-commerce et tableaux de bord résultant en 75% d'augmentation moyenne des ventes pour les clients. Migration de systèmes legacy vers des stacks modernes, améliorant les performances de 60% en moyenne. Développement de solutions CMS personnalisées avec optimisation SEO et design responsive.",
+        "ariaLabel": "Développeur Full-Stack Freelance chez Contractant Indépendant (s'ouvre dans un nouvel onglet)"
       },
       {
         "period": "2022 — Présent",
-        "title": "Assistant d'Enseignement",
+        "title": "Assistant d'Enseignement Senior & Mentor Technique",
         "company": "RDU, TRNC",
-        "description": "Tutorat de 500+ étudiants en C++ et fondamentaux logiciels. Amélioration des performances de classe de 65% à 94% via des revues de code en direct et pratique guidée.",
-        "ariaLabel": "Assistant d'Enseignement chez RDU, TRNC (s'ouvre dans un nouvel onglet)"
+        "description": "Mentorat de 500+ étudiants en informatique dans la programmation C++ avancée et les principes d'ingénierie logicielle. Implémentation de méthodologies d'apprentissage structurées et conduite de revues de code techniques, atteignant 94% de taux de réussite en classe (amélioration de 29%) grâce à l'instruction personnalisée et aux meilleures pratiques de l'industrie.",
+        "ariaLabel": "Assistant d'Enseignement Senior & Mentor Technique chez RDU, TRNC (s'ouvre dans un nouvel onglet)"
       },
       {
         "period": "2024",
-        "title": "Développeur Full Stack Certifié IBM",
-        "company": "Coursera",
-        "description": "Complété 100+ heures de projets concrets utilisant React, Django, Flask et Docker. Expertise acquise en déploiement cloud full-stack sur plusieurs stacks.",
-        "ariaLabel": "Développeur Full Stack Certifié IBM chez Coursera (s'ouvre dans un nouvel onglet)"
+        "title": "Développeur Full Stack Professionnel Certifié IBM",
+        "company": "IBM via Coursera",
+        "description": "Certification professionnelle complète avec 100+ heures de projets de niveau entreprise. Démonstration de maîtrise en React, Python, Django, Flask, Docker et architectures de déploiement cloud. Obtention de compétences avancées en microservices, pipelines CI/CD et développement d'applications évolutives.",
+        "ariaLabel": "Développeur Full Stack Professionnel Certifié IBM chez IBM via Coursera (s'ouvre dans un nouvel onglet)"
       }
     ]
   },
@@ -74,32 +75,32 @@
     "viewMore": "Voir Plus",
     "list": [
       {
-        "title": "RenoSmarter.ai – Estimateur de Coûts Voiceflow",
-        "description": "Application d'estimation de coûts de rénovation domiciliaire pilotée par l'IA construite avec Voiceflow, Airtable et Python. Logique tarifaire améliorée de 60% à 81% de précision et taux d'achèvement augmentés de 40%."
+        "title": "RenoSmarter.AI – Plateforme IA de Rénovation Domiciliaire",
+        "description": "Plateforme Django REST API + React TypeScript déployée sur Render. Reconception du système Voiceflow legacy en workflow de rénovation en 8 étapes de niveau production. Intégration GPT-4o, Gemini AI, Stability AI pour découverte de style, estimation de coûts, et visualisation de cuisine. Construit avec Pinecone vector DB, Supabase, Cloudinary, atteignant 81% de précision tarifaire et 40% d'amélioration du taux d'achèvement avec algorithmes de tarification basés sur code postal."
       },
       {
-        "title": "BrollyHub – Marketplace d'Experts IA",
-        "description": "Plateforme alimentée par GPT pour la réservation d'experts, offres intelligentes, étagères de fichiers, synchronisation de calendrier et appels chat/vidéo en temps réel. Sert 500+ utilisateurs avec intégration IA fluide."
+        "title": "BrollyHub – Plateforme Marketplace d'Experts IA",
+        "description": "Marketplace full-stack servant 500+ utilisateurs avec React TypeScript, Django REST API, et PostgreSQL. Architecture d'agent IA autonome (Brolly AI) pour navigation de plateforme, exécution de fonctions backend, et automatisation de workflows. Communication WebSocket en temps réel, système de calendrier intégré, gestion complète de fichiers (shelf), authentification JWT, automatisation email, et gestion de sessions multi-utilisateurs complexes. En ligne : https://www.brollyhub.com/"
       },
       {
-        "title": "Système Universitaire Aveem",
-        "description": "ERP complet pour les opérations académiques à travers finances, notation et notifications pour 2 000+ utilisateurs. Construit avec React, Django et PostgreSQL, déployé sur AWS EC2."
+        "title": "Système de Gestion Universitaire Aveem",
+        "description": "ERP académique de niveau entreprise construit avec React, Django, et PostgreSQL, hébergé sur AWS EC2. Gestion universitaire complète couvrant finances, notation, inscription étudiante, et systèmes de notification. Sert 2 000+ utilisateurs avec contrôle d'accès basé sur rôles, workflows automatisés, et synchronisation de données en temps réel. Schema de base de données évolutif gérant dossiers académiques, transactions financières, et processus administratifs. En ligne : https://sys.aveemuni.com/"
       },
       {
-        "title": "Dynamiqtec – Blog Alimenté par l'IA",
-        "description": "Site de blog personnel et portfolio minimaliste et multilingue avec contenu MDX ultra-rapide et traduction basée sur Gemma via API."
+        "title": "Dynamiqtec – Blog Technique & Portfolio",
+        "description": "Blog technique multilingue avec 50+ articles sur l'IA, développement web moderne, et insights startup. Construit avec Next.js et MDX, avec traduction automatisée utilisant intégration API Gemma. Couvre sujets avancés : workflows IA, patterns React, architecture full-stack, et analyse industrielle. En ligne : https://dynamiqtec.com/"
       },
       {
         "title": "Spotter – App Planificateur de Voyages",
         "description": "Planificateur de voyages assisté par IA qui aide les utilisateurs à créer, organiser et visualiser des voyages interactivement. Construit avec React et déployé sur Vercel."
       },
       {
-        "title": "Bookify – App de Recommandation de Livres IA",
-        "description": "Application web de découverte et recommandation de livres avec recherche en temps réel sur 10 000+ titres. Construite avec Django et React."
+        "title": "Bookify – Moteur de Recommandation de Livres IA",
+        "description": "Plateforme React + Django avec base de données de 10 000+ livres et algorithmes de recommandation intelligents. Fonctionnalité de recherche en temps réel avec apprentissage des préférences utilisateur, améliorant la rétention de 25%. En ligne : https://jeaneudes-dev.github.io/Bookify/"
       },
       {
-        "title": "Sentifeel – Classificateur de Sentiment IA",
-        "description": "Classificateur web alimenté par GPT-4 atteignant 90% de précision sur 5K+ entrées de texte. Construit avec React pour une interface utilisateur élégante et rapide."
+        "title": "SentiFeel – Plateforme d'Analyse de Sentiment GPT-4",
+        "description": "Interface React avec intégration GPT-4 atteignant 90% de précision sur 5 000+ classifications de texte. Interface haute performance avec traitement en temps réel et visualisation de données. En ligne : https://jeaneudes-dev.github.io/sentifeel/"
       },
       {
         "title": "Readme Converter – Markdown vers PDF",
@@ -115,11 +116,26 @@
       }
     ]
   },
+  "certifications": {
+    "ibm": {
+      "description": "Programme complet de développement full-stack couvrant React, Python, Django, Flask, Docker et déploiement cloud. Complété 100+ heures de projets pratiques et d'applications du monde réel."
+    },
+    "ai": {
+      "description": "Certification avancée en ingénierie IA se concentrant sur l'apprentissage automatique, l'apprentissage profond et le développement d'applications IA. Spécialisé dans la construction de systèmes IA prêts pour la production et l'intégration d'API IA."
+    },
+    "view": "Voir",
+    "download": "Télécharger",
+    "verify": "Vérifier",
+    "skills": "Compétences Couvertes",
+    "cta": "J'élargis continuellement mon expertise grâce à des programmes de développement professionnel et de certification.",
+    "viewLinkedIn": "Voir Plus sur LinkedIn"
+  },
   "sections": {
     "about": "À propos",
     "experience": "Expérience",
     "skills": "Compétences",
     "projects": "Projets",
+    "certifications": "Certifications",
     "me": "JeanEudes-dev"
   },
   "seo": {

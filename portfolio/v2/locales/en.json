@@ -1,61 +1,62 @@
 {
   "name": "Jean-Eudes Assogba",
-  "role": "Full-Stack Software Engineer",
-  "description": "I design and develop high-quality, modern, and scalable web applications.",
+  "role": "AI Engineer | Full-Stack Developer",
+  "description": "I architect intelligent AI systems and scalable web applications that solve real-world problems.",
   "nav": {
     "about": "About",
     "experience": "Experience", 
     "skills": "Skills",
-    "projects": "Projects"
+    "projects": "Projects",
+    "certifications": "Certifications"
   },
   "about": {
-    "intro": "I'm <strong>Jean-Eudes Assogba</strong>, a full-stack software engineer specializing in high-performance web applications, AI-powered tools, and seamless user experiences. I combine strong backend architecture with sleek, scalable frontends using <strong>React, TypeScript, Django, Python</strong>, and modern AI APIs.",
-    "approach": "I build systems that are fast, stable, and production-ready — whether it's an intelligent expert marketplace, a real-time dashboard, or an AI-enhanced platform. My approach is clear: ship clean code, prioritize UX, and solve real problems with precision.",
-    "experience": "From startups to solo projects, I've delivered robust, maintainable solutions across multiple stacks — all showcased on my <strong>GitHub</strong>. I'm currently open to full-time remote roles where innovation, execution, and engineering excellence meet."
+    "intro": "I'm <strong>Jean-Eudes Assogba</strong>, an AI Engineer and Full-Stack Developer specializing in building scalable, production-ready applications that merge cutting-edge AI with modern web technologies. I architect intelligent systems using <strong>GPT-4, Gemini AI, React TypeScript, Django, Python</strong>, and advanced AI integrations that solve real-world problems at scale.",
+    "approach": "I design and deploy end-to-end AI systems — from autonomous agents and multi-service AI platforms to enterprise marketplace solutions serving 500+ users. My expertise spans intelligent automation, vector databases, real-time communication systems, and production-grade full-stack architectures with measurable business impact.",
+    "experience": "As Founder of BrollyHub and AI Engineer at RenoSmarter.ai, I've built production AI systems integrating GPT-4o, Gemini AI, Stability AI, achieving 81% accuracy improvements and 40% completion rate increases. Currently seeking opportunities to architect next-generation AI-powered applications where innovation meets enterprise scalability."
   },
   "experience": {
     "experiences": [
       {
-        "period": "2024 — Present",
-        "title": "AI Engineering Intern",
-        "company": "PM-Accelerator",
-        "description": "Refactored Voiceflow-based cost estimation logic, boosting pricing accuracy from 60% to 81%. Improved user completion rates by 40% and collaborated cross-functionally under fast-paced agile cycles.",
-        "ariaLabel": "AI Engineering Intern at PM-Accelerator (opens in a new tab)"
+        "period": "02/2024 — Present",
+        "title": "Founder & Lead Engineer",
+        "company": "BrollyHub",
+        "description": "Architected and developed AI-powered expert marketplace platform serving 500+ users with React TypeScript frontend and Django backend. Built autonomous AI agent (Brolly AI) capable of frontend navigation, backend function execution, and platform automation. Designed comprehensive real-time WebSocket communication, calendar management, JWT authentication, and complex multi-user workflows.",
+        "ariaLabel": "Founder & Lead Engineer at BrollyHub (opens in a new tab)"
       },
       {
-        "period": "2023 — 2024",
-        "title": "Frontend Developer",
-        "company": "RDU, TRNC",
-        "description": "Built a Club Management System adopted by 10+ clubs and 2,000+ students. Integrated automated event scheduling and real-time announcements, increasing student engagement by 50%.",
-        "ariaLabel": "Frontend Developer at RDU, TRNC (opens in a new tab)"
+        "period": "02/2024 — 08/2024",
+        "title": "AI Engineer",
+        "company": "RenoSmarter.ai",
+        "description": "Complete rebuild of RenoSmarter.AI platform using modern full-stack architecture. Redesigned legacy Voiceflow system into production Django REST API + React TypeScript platform. Integrated multiple AI services: GPT-4o, Gemini AI, Stability AI, implementing 8-stage renovation workflow with zip code-based pricing, achieving 81% accuracy improvement and 40% completion rate improvement.",
+        "ariaLabel": "AI Engineer at RenoSmarter.ai (opens in a new tab)"
       },
       {
-        "period": "2023",
-        "title": "Full-Stack Developer",
-        "company": "RDU, TRNC",
-        "description": "Led development of a financial dashboard reducing transaction processing time by 55%. Enhanced support systems, cutting helpdesk wait times by 75%.",
-        "ariaLabel": "Full-Stack Developer at RDU, TRNC (opens in a new tab)"
+        "period": "06/2023 — Present",
+        "title": "Frontend Developer & Web Architect",
+        "company": "Rauf Denktas University",
+        "description": "Staff position developing university digital infrastructure. Leading design and development of new university website and digital presence. Built Club Management System adopted by 10+ clubs serving 2,000+ students. Developed automated event scheduling and announcement system, increasing engagement by 50%.",
+        "ariaLabel": "Frontend Developer & Web Architect at Rauf Denktas University (opens in a new tab)"
       },
       {
-        "period": "2023 — Present",
+        "period": "01/2021 — Present",
         "title": "Freelance Full-Stack Developer",
-        "company": "Independent",
-        "description": "Delivered 20+ websites and web apps across e-commerce, portfolios, and SaaS. Migrated legacy stacks, built custom CMS tools, and increased client sales through SEO-optimized UX.",
-        "ariaLabel": "Freelance Full-Stack Developer at Independent (opens in a new tab)"
+        "company": "Independent Contractor",
+        "description": "Independent contractor delivering custom web solutions for diverse clients. Delivered 20+ production websites and web applications using React, Next.js, and Django. Built e-commerce platforms and dashboards resulting in 75% average sales increases for clients. Migrated legacy systems to modern stacks, improving performance by 60% on average. Developed custom CMS solutions with SEO optimization and responsive design.",
+        "ariaLabel": "Freelance Full-Stack Developer at Independent Contractor (opens in a new tab)"
       },
       {
         "period": "2022 — Present",
-        "title": "Teaching Assistant",
+        "title": "Senior Teaching Assistant & Technical Mentor",
         "company": "RDU, TRNC",
-        "description": "Tutored 500+ students in C++ and software fundamentals. Boosted class performance from 65% to 94% via live code reviews and guided practice.",
-        "ariaLabel": "Teaching Assistant at RDU, TRNC (opens in a new tab)"
+        "description": "Mentored 500+ computer science students in advanced C++ programming and software engineering principles. Implemented structured learning methodologies and conducted technical code reviews, achieving 94% class success rate (29% improvement) through personalized instruction and industry best practices.",
+        "ariaLabel": "Senior Teaching Assistant & Technical Mentor at RDU, TRNC (opens in a new tab)"
       },
       {
         "period": "2024",
-        "title": "IBM Certified Full Stack Developer",
-        "company": "Coursera",
-        "description": "Completed 100+ hours of real-world projects using React, Django, Flask, and Docker. Gained full-stack cloud deployment expertise across multiple stacks.",
-        "ariaLabel": "IBM Certified Full Stack Developer at Coursera (opens in a new tab)"
+        "title": "IBM Certified Full Stack Developer Professional",
+        "company": "IBM via Coursera",
+        "description": "Completed comprehensive professional certification with 100+ hours of enterprise-grade projects. Demonstrated mastery in React, Python, Django, Flask, Docker, and cloud deployment architectures. Achieved advanced proficiency in microservices, CI/CD pipelines, and scalable application development.",
+        "ariaLabel": "IBM Certified Full Stack Developer Professional at IBM via Coursera (opens in a new tab)"
       }
     ]
   },
@@ -74,52 +75,67 @@
     "viewMore": "View More",
     "list": [
       {
-        "title": "RenoSmarter.ai – Voiceflow Cost Estimator",
-        "description": "AI-driven home renovation cost estimation app built with Voiceflow, Airtable, and Python. Enhanced pricing logic from 60% to 81% accuracy and boosted completion rates by 40%."
+        "title": "RenoSmarter.AI – AI-Powered Home Renovation Platform",
+        "description": "Django REST API + React TypeScript platform deployed on Render. Redesigned legacy Voiceflow system into production-grade 8-stage renovation workflow. Integrated GPT-4o, Gemini AI, Stability AI for style discovery, cost estimation, and kitchen visualization. Built with Pinecone vector DB, Supabase, Cloudinary, achieving 81% pricing accuracy and 40% completion rate improvement with zip code-based pricing algorithms."
       },
       {
-        "title": "BrollyHub – AI Expert Marketplace",
-        "description": "GPT-powered platform for expert booking, smart offers, file shelves, calendar sync, and real-time chat/video calls. Serves 500+ users with seamless AI integration."
+        "title": "BrollyHub – AI Expert Marketplace Platform",
+        "description": "Full-stack marketplace serving 500+ users with React TypeScript, Django REST API, and PostgreSQL. Architected autonomous AI agent (Brolly AI) for platform navigation, backend function execution, and workflow automation. Built real-time WebSocket communication, integrated calendar system, comprehensive file management (shelf), JWT authentication, email automation, and complex multi-user session management. Live: https://www.brollyhub.com/"
       },
       {
-        "title": "Aveem University System",
-        "description": "Full ERP for academic operations across finance, grading, and notifications for 2,000+ users. Built with React, Django, and PostgreSQL, deployed on AWS EC2."
+        "title": "Aveem University Management System",
+        "description": "Enterprise-grade academic ERP built with React, Django, and PostgreSQL, hosted on AWS EC2. Comprehensive university management covering finance, grading, student enrollment, and notification systems. Serves 2,000+ users with role-based access control, automated workflows, and real-time data synchronization. Architected scalable database schema handling academic records, financial transactions, and administrative processes. Live: https://sys.aveemuni.com/"
       },
       {
-        "title": "Dynamiqtec – AI-Powered Blog",
-        "description": "Minimalist, multilingual personal blog and portfolio site with blazing-fast MDX content and Gemma-based translation via API."
+        "title": "Dynamiqtec – Technical Blog & Portfolio",
+        "description": "Multilingual technical blog with 50+ articles on AI, modern web development, and startup insights. Built with Next.js and MDX, featuring automated translation using Gemma API integration. Covers advanced topics: AI workflows, React patterns, full-stack architecture, and industry analysis. Live: https://dynamiqtec.com/"
       },
       {
-        "title": "Spotter – Trip Planner App",
-        "description": "AI-assisted travel planner that helps users create, organize, and visualize trips interactively. Built with React and deployed on Vercel."
+        "title": "Spotter – AI-Driven Travel Planning Platform",
+        "description": "Developed an intelligent travel planning application utilizing machine learning algorithms for personalized trip recommendations, interactive visualization, and seamless itinerary management. Built with React, advanced state management, and cloud deployment on Vercel with automated optimization."
       },
       {
-        "title": "Bookify – AI Book Recommendation App",
-        "description": "Book discovery and recommendation web app with real-time search across 10,000+ titles. Built using Django and React."
+        "title": "Bookify – AI Book Recommendation Engine",
+        "description": "React + Django platform with 10,000+ book database and intelligent recommendation algorithms. Real-time search functionality with user preference learning, improving retention by 25%. Live: https://jeaneudes-dev.github.io/Bookify/"
       },
       {
-        "title": "Sentifeel – AI Sentiment Classifier",
-        "description": "GPT-4-powered web classifier achieving 90% accuracy on 5K+ text entries. Built with React for a sleek and fast UI."
+        "title": "SentiFeel – GPT-4 Sentiment Analysis Platform",
+        "description": "React frontend with GPT-4 integration achieving 90% accuracy on 5,000+ text classifications. High-performance interface with real-time processing and data visualization. Live: https://jeaneudes-dev.github.io/sentifeel/"
       },
       {
-        "title": "Readme Converter – Markdown to PDF",
-        "description": "Developer-focused SPA for converting markdown to PDF/HTML with live preview and export capabilities."
+        "title": "Readme Converter – Advanced Document Processing Tool",
+        "description": "Created a professional-grade single-page application for markdown-to-PDF/HTML conversion, featuring real-time preview, advanced formatting options, and optimized export functionality. Designed specifically for developers with enhanced performance and user experience."
       },
       {
-        "title": "Personalized AI Chat Assistant",
-        "description": "Conversational AI assistant built with React and OpenAI APIs. Supports context awareness and multi-turn interactions."
+        "title": "AI-Powered Conversational Assistant Platform",
+        "description": "Architected an advanced conversational AI system integrating OpenAI GPT models with React frontend. Implemented context-aware dialogue management, multi-turn conversation handling, and personalized response generation with sophisticated state management and API optimization."
       },
       {
-        "title": "Journal PWA – Offline Notes App",
-        "description": "Progressive Web App for journaling and note-taking, supporting offline sync, secure storage, and a clean mobile interface."
+        "title": "Journal PWA – Enterprise-Grade Note Management System",
+        "description": "Developed a comprehensive Progressive Web Application for journaling and note management, featuring offline synchronization, encrypted data storage, cross-device compatibility, and intuitive mobile-first design with advanced performance optimization."
       }
     ]
+  },
+  "certifications": {
+    "ibm": {
+      "description": "Comprehensive full-stack development program covering React, Python, Django, Flask, Docker, and cloud deployment. Completed 100+ hours of hands-on projects and real-world applications."
+    },
+    "ai": {
+      "description": "Advanced AI engineering certification focusing on machine learning, deep learning, and AI application development. Specialized in building production-ready AI systems and integrating AI APIs."
+    },
+    "view": "View",
+    "download": "Download",
+    "verify": "Verify",
+    "skills": "Skills Covered",
+    "cta": "Continuously expanding my expertise through professional development and certification programs.",
+    "viewLinkedIn": "View More on LinkedIn"
   },
   "sections": {
     "about": "About",
     "experience": "Experience",
     "skills": "Skills",
     "projects": "Projects",
+    "certifications": "Certifications",
     "me": "JeanEudes-dev"
   },
   "seo": {

@@ -16,7 +16,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "experience", "skills", "projects"];
+      const sections = ["about", "experience", "skills", "projects", "certifications"];
       const scrollPos = window.scrollY + window.innerHeight / 2;
 
       for (const section of sections) {
@@ -71,7 +71,7 @@ const Sidebar = () => {
         }}
       >
         <motion.ul className="space-y-8">
-          {["about", "experience", "skills", "projects"].map((item, index) => {
+          {["about", "experience", "skills", "projects", "certifications"].map((item, index) => {
             const sectionId = item;
             const isActive = activeSection === sectionId;
 
@@ -177,7 +177,7 @@ const Sidebar = () => {
       </div>
       {resumeOpen && (
         <ProjectModal
-          url="/portfolios/Jean-Eudes_ASSOGBA_dev.pdf"
+          url="/Jean-Eudes_ASSOGBA_dev.pdf"
           onClose={() => setResumeOpen(false)}
         />
       )}

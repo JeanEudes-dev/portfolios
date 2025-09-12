@@ -4,6 +4,7 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Certifications from "./components/Certifications";
 import { motion } from "framer-motion";
 import Me from "./components/me";
 import { useTranslation } from "react-i18next";
@@ -36,6 +37,7 @@ const Main = () => {
     { id: "experience", Component: Experience, title: t('sections.experience') },
     { id: "skills", Component: Skills, title: t('sections.skills') },
     { id: "projects", Component: Projects, title: t('sections.projects') },
+    { id: "certifications", Component: Certifications, title: t('sections.certifications') },
     { id: "me", Component: Me, title: t('sections.me') },
   ];
 

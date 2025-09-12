@@ -24,7 +24,7 @@ const Projects = () => {
     {
       title: projectsTranslations[1]?.title || "BrollyHub – AI Expert Marketplace",
       description: projectsTranslations[1]?.description || "GPT-powered platform for expert booking, smart offers, file shelves, calendar sync, and real-time chat/video calls. Serves 500+ users with seamless AI integration.",
-      link: "https://brollyhub.com",
+      link: "https://www.brollyhub.com",
       imageUrl:
         "https://res.cloudinary.com/drhwxs4za/image/upload/v1751689485/Screenshot_From_2025-07-05_07-24-26_loil11.png",
       alt: "BrollyHub project card",
@@ -40,7 +40,7 @@ const Projects = () => {
     {
       title: projectsTranslations[3]?.title || "Dynamiqtec – AI-Powered Blog",
       description: projectsTranslations[3]?.description || "Minimalist, multilingual personal blog and portfolio site with blazing-fast MDX content and Gemma-based translation via API.",
-      link: "https://dynamiqtec.com",
+      link: "https://dynamiqtec.com/",
       imageUrl:
         "https://res.cloudinary.com/drhwxs4za/image/upload/v1751689665/Screenshot_From_2025-07-05_07-27-25_ldliiq.png",
       alt: "Dynamiqtec project card",
