@@ -16,7 +16,7 @@ const Certifications = () => {
         defaultValue: "Comprehensive full-stack development program covering React, Python, Django, Flask, Docker, and cloud deployment. Completed 100+ hours of hands-on projects and real-world applications."
       }),
       skills: ["React", "Python", "Django", "Flask", "Docker", "CI/CD", "Cloud Computing", "REST APIs", "Microservices"],
-      certificateUrl: "/IBM Full Stack developper.pdf",
+      certificateUrl: "/portfolios/IBM_Full_Stack_developper.pdf",
       verificationUrl: "https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer",
       icon: "🎓",
       color: "from-blue-500 to-blue-700"
@@ -29,7 +29,7 @@ const Certifications = () => {
         defaultValue: "Advanced AI engineering certification focusing on machine learning, deep learning, and AI application development. Specialized in building production-ready AI systems and integrating AI APIs."
       }),
       skills: ["Machine Learning", "AI APIs", "Python", "TensorFlow", "OpenAI", "Prompt Engineering", "AI Integration", "Model Deployment"],
-      certificateUrl: "/ai-engineer.pdf",
+      certificateUrl: "/portfolios/ai-engineer.pdf",
       verificationUrl: "#",
       icon: "🤖",
       color: "from-purple-500 to-purple-700"

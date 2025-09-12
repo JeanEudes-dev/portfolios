@@ -177,7 +177,7 @@ const Sidebar = () => {
       </div>
       {resumeOpen && (
         <ProjectModal
-          url="/Jean-Eudes_ASSOGBA_dev.pdf"
+          url="/portfolios/Jean-Eudes_ASSOGBA_dev.pdf"
           onClose={() => setResumeOpen(false)}
         />
       )}
