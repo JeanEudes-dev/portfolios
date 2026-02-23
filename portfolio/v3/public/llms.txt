@@ -1,0 +1,43 @@
+# Jean-Eudes Assogba — Backend Engineer
+
+> Backend engineer with 4+ years building production Django systems. Sole backend owner on multiple products, responsible for architecture decisions, schema design, test coverage, deployment, uptime, and performance. Systems serve thousands of users in production. Fluent in English and French. Available immediately.
+
+## Contact
+
+- Email: eudesmails@gmail.com
+- Location: Northern Cyprus (Open to Remote and Relocation)
+
+## Key Links
+
+- [Portfolio](https://jeaneudes-dev.github.io/portfolios): Personal portfolio showcasing production systems, experience, and technical focus
+- [GitHub](https://github.com/JeanEudes-dev): Open source projects and contributions
+- [LinkedIn](https://www.linkedin.com/in/jean-eudes-assogba/): Professional profile and work history
+- [Blog](https://jeaneudes-dev.github.io/blog): Technical writing
+- [Resume (PDF)](https://jeaneudes-dev.github.io/portfolios/resume.pdf): Downloadable CV
+
+## Technical Expertise
+
+- Backend: Python, Django, Django REST Framework, Celery, Redis, pytest, WebSockets
+- Databases: PostgreSQL (schema design, indexing, migrations, EXPLAIN), MySQL, Supabase
+- AI Integration: OpenAI GPT-4o, Google Gemini, Pinecone, LangChain, RAG pipelines
+- Observability: Sentry, structured logging, health checks, CI test gates, uptime monitoring
+- Frontend: React, Next.js, TypeScript, Tailwind CSS
+- Infrastructure: AWS (EC2, S3), Google Cloud, Docker, Linux, Nginx, GitHub Actions, CI/CD
+
+## Production Systems
+
+- [BrollyHub Academia](https://academia.brollyhub.com): Multi-role expert marketplace with real-time communication and transactional workflows. 500+ users, 15k+ API requests/day, 100+ concurrent WebSocket connections. Stack: Django REST, React, PostgreSQL, WebSockets, Google Cloud.
+- [RenoSmarterAI](https://renosmarter.ai): AI renovation platform with multi-step cost estimation and vector-based material matching. 81% pricing accuracy, 99%+ uptime, 40% user task completion increase. Stack: Django REST, React TypeScript, Pinecone, GPT-4o, Gemini.
+- [Rauf Denktas University](https://rdu.edu.tr): University platform with student/faculty portals and content management. 2,000+ daily active users, 50k+ monthly page views, 55% faster page loads. Stack: Django, Next.js, PostgreSQL, Nginx.
+- [Aveem University](https://aveem.net): University management system with role-based access and real-time data synchronization. 2,000+ users, 5 RBAC levels, real-time sync. Stack: Django, React, PostgreSQL, WebSockets.
+
+## Professional Experience
+
+- AI Backend Engineer at RenoSmarterAI (Feb 2024 – Aug 2024): Rebuilt legacy renovation platform into modular backend, reducing codebase complexity by 45%. Designed pricing engine routing through GPT-4o, Gemini, and Pinecone. Improved pricing accuracy by 81%.
+- Backend Engineer (Founding Engineer) at BrollyHub (Mar 2023 – Present): Sole backend owner. Designed Django REST backend for multi-role marketplace. Cut API response time by 60%. WebSocket layer handling 100+ concurrent connections.
+- IT Staff and Software Engineer at Rauf Denktas University (Jun 2023 – Present): Led backend development for 2,000+ DAU platform. Designed 5-level RBAC system. Cut page load times by 55%.
+
+## Education
+
+- MSc in Software Engineering — Rauf Denktas University, Northern Cyprus (Ongoing)
+- BSc in Software Engineering — Rauf Denktas University (CGPA: 3.95/3.95, 2019–2023)

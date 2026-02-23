@@ -22,19 +22,11 @@ export default function Home() {
     }
   }, [isInitialized, i18n.language]);
 
-  if (!isInitialized) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="w-5 h-5 border-2 border-text-tertiary border-t-text-primary rounded-full animate-spin" />
-      </div>
-    );
-  }
-
   return (
     <>
       <SEO />
       <Nav />
-      <main>
+      <main id="main">
         <Hero />
         <BackendFocus />
         <Systems />
