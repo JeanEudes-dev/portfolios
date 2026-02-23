@@ -1,0 +1,144 @@
+{
+  "name": "Jean-Eudes Assogba",
+  "role": "Ingénieur Backend",
+  "tagline": "Je construis les systèmes Django derrière les produits sur lesquels les gens comptent.",
+  "location": "Chypre du Nord",
+  "availability": "Disponible maintenant",
+  "openTo": "Ouvert au télétravail et à la relocalisation",
+  "nav": {
+    "blog": "Blog",
+    "resume": "CV"
+  },
+  "hero": {
+    "resumeBtn": "CV",
+    "githubBtn": "GitHub",
+    "linkedinBtn": "LinkedIn"
+  },
+  "sections": {
+    "backendFocus": "CE QUE JE CONSTRUIS",
+    "systems": "SYSTÈMES EN PRODUCTION",
+    "experience": "EXPÉRIENCE"
+  },
+  "backendFocus": [
+    {
+      "label": "Conception de bases de données",
+      "description": "Conception de schémas PostgreSQL pour systèmes à fort trafic, indexation composite, analyse de requêtes avec EXPLAIN et planification de migrations"
+    },
+    {
+      "label": "Conception d'API",
+      "description": "Conception d'API RESTful avec versionnage, pagination, limitation de débit, endpoints idempotents et contrats d'erreur cohérents"
+    },
+    {
+      "label": "Tests",
+      "description": "Tests automatisés avec pytest (unitaires + intégration), fixtures basées sur des factories et couverture imposée par la CI"
+    },
+    {
+      "label": "Cache",
+      "description": "Conception de stratégies de cache avec Redis pour les données de session, résultats de requêtes et état du limiteur de débit"
+    },
+    {
+      "label": "Files de tâches",
+      "description": "Orchestration de tâches en arrière-plan avec Celery et Redis, incluant politiques de retry et gestion des dead-letter"
+    },
+    {
+      "label": "Observabilité",
+      "description": "Logging structuré, suivi d'erreurs (Sentry) et endpoints de health-check pour l'observabilité en production"
+    },
+    {
+      "label": "Intégration IA",
+      "description": "Intégration de services IA avec parsing de sorties structurées, couches de validation et routage de fallback multi-fournisseurs"
+    },
+    {
+      "label": "Infrastructure",
+      "description": "Administration de serveurs Linux, reverse proxy Nginx, SSL, conteneurisation Docker et CI/CD avec GitHub Actions"
+    }
+  ],
+  "systems": [
+    {
+      "name": "BrollyHub Academia",
+      "url": "https://academia.brollyhub.com",
+      "description": "Marketplace multi-rôles avec communication en temps réel et workflows transactionnels",
+      "metrics": ["500+ utilisateurs", "15k+ req/jour", "100+ WebSockets"],
+      "stack": ["Django REST", "React", "PostgreSQL", "WebSockets", "Google Cloud"]
+    },
+    {
+      "name": "RenoSmarterAI",
+      "url": "https://renosmarter.ai",
+      "description": "Plateforme de rénovation IA avec estimation de coûts multi-étapes et matching de matériaux par vecteurs",
+      "metrics": ["81% de précision", "99%+ disponibilité", "40% d'achèvement en plus"],
+      "stack": ["Django REST", "React TypeScript", "Pinecone", "GPT-4o", "Gemini"]
+    },
+    {
+      "name": "Rauf Denktas University",
+      "url": "https://rdu.edu.tr",
+      "description": "Plateforme universitaire avec portails étudiants/enseignants et gestion de contenu",
+      "metrics": ["2 000+ UAJ", "50k+ vues/mois", "55% plus rapide"],
+      "stack": ["Django", "Next.js", "PostgreSQL", "Nginx"]
+    },
+    {
+      "name": "Aveem University",
+      "url": "https://aveem.net",
+      "description": "Système de gestion universitaire avec contrôle d'accès basé sur les rôles et synchronisation en temps réel",
+      "metrics": ["2 000+ utilisateurs", "5 niveaux RBAC", "Sync en temps réel"],
+      "stack": ["Django", "React", "PostgreSQL", "WebSockets"]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Ingénieur Backend IA",
+      "company": "RenoSmarterAI",
+      "url": "https://renosmarter.ai",
+      "period": "Fév 2024 — Août 2024",
+      "location": "Télétravail (basé au Canada)",
+      "bullets": [
+        "Reconstruction de la plateforme de rénovation en backend modulaire, séparant les services IA de la logique métier et réduisant la complexité du code de 45%",
+        "Conception du moteur de tarification routant les requêtes via GPT-4o, Gemini et recherche vectorielle Pinecone, avec validation déterministe sur chaque réponse IA",
+        "Amélioration de la précision tarifaire de 81% grâce à la restructuration des prompts, la calibration few-shot et les contrôles backend"
+      ]
+    },
+    {
+      "title": "Ingénieur Backend (Ingénieur Fondateur)",
+      "company": "BrollyHub",
+      "url": "https://academia.brollyhub.com",
+      "period": "Mar 2023 — Présent",
+      "location": "Télétravail",
+      "bullets": [
+        "Seul responsable backend : conception du backend Django REST pour une marketplace multi-rôles servant 500+ utilisateurs actifs et 15k+ requêtes API par jour",
+        "Ingénierie du schéma PostgreSQL avec index composites, cache Redis, et réécriture des requêtes lentes, réduisant le temps de réponse API de 60%",
+        "Implémentation de la couche WebSocket gérant 100+ connexions simultanées pour la messagerie en temps réel, les notifications et la synchronisation du calendrier"
+      ]
+    },
+    {
+      "title": "Staff IT et Ingénieur Logiciel",
+      "company": "Rauf Denktas University",
+      "url": "https://rdu.edu.tr",
+      "period": "Juin 2023 — Présent",
+      "location": "Chypre du Nord",
+      "bullets": [
+        "Direction du développement backend de la plateforme universitaire officielle gérant 2 000+ utilisateurs actifs quotidiens et 50k+ pages vues mensuelles",
+        "Conception d'un système RBAC à 5 niveaux de permissions couvrant les workflows académiques, administratifs et du registraire",
+        "Restructuration des requêtes de base de données et ajout d'index ciblés, réduisant les temps de chargement de 55% sur les portails les plus fréquentés"
+      ]
+    }
+  ],
+  "footer": {
+    "email": "eudesmails@gmail.com",
+    "languages": "Bilingue anglais et français",
+    "availabilityText": "Disponible immédiatement. Ouvert au télétravail, hybride ou relocalisation avec parrainage de visa.",
+    "blog": "Blog",
+    "copyright": "Jean-Eudes Assogba"
+  },
+  "meta": {
+    "title": "Jean-Eudes Assogba — Ingénieur Backend",
+    "description": "Ingénieur backend avec 4+ ans d'expérience dans la construction de systèmes Django en production. Seul responsable backend sur plusieurs produits servant des milliers d'utilisateurs.",
+    "ogTitle": "Jean-Eudes Assogba — Ingénieur Backend",
+    "ogDescription": "Ingénieur backend construisant des systèmes Django en production. PostgreSQL, Redis, Celery, API REST, WebSockets.",
+    "ogImage": "/portfolios/me.jpg",
+    "twitterCard": "summary_large_image"
+  },
+  "seo": {
+    "jobTitle": "Ingénieur Backend",
+    "location": "Chypre du Nord",
+    "skills": ["Python", "Django", "PostgreSQL", "Redis", "Celery", "API REST", "WebSockets", "Docker", "AWS", "Google Cloud"]
+  }
+}

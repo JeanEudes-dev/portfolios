@@ -1,0 +1,144 @@
+{
+  "name": "Jean-Eudes Assogba",
+  "role": "Backend Engineer",
+  "tagline": "I build the Django systems behind products people rely on.",
+  "location": "Northern Cyprus",
+  "availability": "Available Now",
+  "openTo": "Open to Remote & Relocation",
+  "nav": {
+    "blog": "Blog",
+    "resume": "Resume"
+  },
+  "hero": {
+    "resumeBtn": "Resume",
+    "githubBtn": "GitHub",
+    "linkedinBtn": "LinkedIn"
+  },
+  "sections": {
+    "backendFocus": "WHAT I BUILD",
+    "systems": "PRODUCTION SYSTEMS",
+    "experience": "EXPERIENCE"
+  },
+  "backendFocus": [
+    {
+      "label": "Database Design",
+      "description": "PostgreSQL schema design for high-traffic systems, composite indexing, query analysis with EXPLAIN, and migration planning"
+    },
+    {
+      "label": "API Design",
+      "description": "RESTful API design with versioning, pagination, rate limiting, idempotent endpoints, and consistent error contracts"
+    },
+    {
+      "label": "Testing",
+      "description": "Automated testing with pytest (unit + integration), factory-based fixtures, and CI-enforced coverage gates"
+    },
+    {
+      "label": "Caching",
+      "description": "Caching strategy design with Redis for session data, query results, and rate limiter state"
+    },
+    {
+      "label": "Task Queues",
+      "description": "Background task orchestration with Celery and Redis, including retry policies and dead-letter handling"
+    },
+    {
+      "label": "Observability",
+      "description": "Structured logging, error tracking (Sentry), and health-check endpoints for production observability"
+    },
+    {
+      "label": "AI Integration",
+      "description": "AI service integration with structured output parsing, validation layers, and multi-provider fallback routing"
+    },
+    {
+      "label": "Infrastructure",
+      "description": "Linux server ops, Nginx reverse proxy, SSL, Docker containerization, and CI/CD with GitHub Actions"
+    }
+  ],
+  "systems": [
+    {
+      "name": "BrollyHub Academia",
+      "url": "https://academia.brollyhub.com",
+      "description": "Multi-role expert marketplace with real-time communication and transactional workflows",
+      "metrics": ["500+ users", "15k+ req/day", "100+ WebSockets"],
+      "stack": ["Django REST", "React", "PostgreSQL", "WebSockets", "Google Cloud"]
+    },
+    {
+      "name": "RenoSmarterAI",
+      "url": "https://renosmarter.ai",
+      "description": "AI renovation platform with multi-step cost estimation and vector-based material matching",
+      "metrics": ["81% accuracy", "99%+ uptime", "40% completion increase"],
+      "stack": ["Django REST", "React TypeScript", "Pinecone", "GPT-4o", "Gemini"]
+    },
+    {
+      "name": "Rauf Denktas University",
+      "url": "https://rdu.edu.tr",
+      "description": "University platform with student/faculty portals and content management",
+      "metrics": ["2,000+ DAU", "50k+ monthly views", "55% faster loads"],
+      "stack": ["Django", "Next.js", "PostgreSQL", "Nginx"]
+    },
+    {
+      "name": "Aveem University",
+      "url": "https://aveem.net",
+      "description": "University management system with role-based access and real-time data synchronization",
+      "metrics": ["2,000+ users", "5 RBAC levels", "Real-time sync"],
+      "stack": ["Django", "React", "PostgreSQL", "WebSockets"]
+    }
+  ],
+  "experience": [
+    {
+      "title": "AI Backend Engineer",
+      "company": "RenoSmarterAI",
+      "url": "https://renosmarter.ai",
+      "period": "Feb 2024 — Aug 2024",
+      "location": "Remote (Canada-based)",
+      "bullets": [
+        "Rebuilt legacy renovation platform into modular backend, separating AI services from core business logic and reducing codebase complexity by 45%",
+        "Designed pricing engine routing requests through GPT-4o, Gemini, and Pinecone vector search, with deterministic validation on every AI response",
+        "Improved pricing accuracy by 81% through prompt restructuring, few-shot calibration, and backend checks that catch and correct malformed outputs"
+      ]
+    },
+    {
+      "title": "Backend Engineer (Founding Engineer)",
+      "company": "BrollyHub",
+      "url": "https://academia.brollyhub.com",
+      "period": "Mar 2023 — Present",
+      "location": "Remote",
+      "bullets": [
+        "Sole backend owner: designed Django REST backend for multi-role marketplace serving 500+ active users and 15k+ API requests per day",
+        "Engineered PostgreSQL schema with composite indexes, Redis caching, and rewrote slow queries, cutting average API response time by 60%",
+        "Implemented WebSocket layer handling 100+ concurrent connections for real-time messaging, notification delivery, and calendar synchronization"
+      ]
+    },
+    {
+      "title": "IT Staff and Software Engineer",
+      "company": "Rauf Denktas University",
+      "url": "https://rdu.edu.tr",
+      "period": "Jun 2023 — Present",
+      "location": "Northern Cyprus",
+      "bullets": [
+        "Led backend development of the official university platform handling 2,000+ daily active users and 50k+ monthly page views",
+        "Designed RBAC system with 5 permission levels covering academic, administrative, and registrar workflows",
+        "Restructured database queries and added targeted indexes, cutting page load times by 55% on the busiest portals"
+      ]
+    }
+  ],
+  "footer": {
+    "email": "eudesmails@gmail.com",
+    "languages": "Fluent in English and French",
+    "availabilityText": "Available immediately. Open to remote, hybrid, or relocation with visa sponsorship.",
+    "blog": "Blog",
+    "copyright": "Jean-Eudes Assogba"
+  },
+  "meta": {
+    "title": "Jean-Eudes Assogba — Backend Engineer",
+    "description": "Backend engineer with 4+ years building production Django systems. Sole backend owner on multiple products serving thousands of users.",
+    "ogTitle": "Jean-Eudes Assogba — Backend Engineer",
+    "ogDescription": "Backend engineer building production Django systems. PostgreSQL, Redis, Celery, REST APIs, WebSockets.",
+    "ogImage": "/portfolios/me.jpg",
+    "twitterCard": "summary_large_image"
+  },
+  "seo": {
+    "jobTitle": "Backend Engineer",
+    "location": "Northern Cyprus",
+    "skills": ["Python", "Django", "PostgreSQL", "Redis", "Celery", "REST APIs", "WebSockets", "Docker", "AWS", "Google Cloud"]
+  }
+}
