@@ -1,6 +1,29 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jeaneudes-dev.github.io/portfolios/sitemap.xml
+# AI Search Crawlers
+User-agent: GPTBot
+Allow: /
 
-Crawl-delay: 1
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+Sitemap: https://jeaneudes-dev.github.io/portfolios/sitemap.xml
